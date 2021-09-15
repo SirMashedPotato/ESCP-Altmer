@@ -9,8 +9,8 @@
     <invNutrition>2.55</invNutrition>
     <invFoodDef>Pemmican</invFoodDef>
     <apparelTags>
-      <!--<li>Neolithic</li>-->
-      <li>MedievalBasic</li>
+      <li>Neolithic</li>
+      <li>Medieval</li>
     </apparelTags>
   </PawnKindDef>
 
