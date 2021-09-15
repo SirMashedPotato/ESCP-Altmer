@@ -12,7 +12,7 @@
     <factionIconPath>World/WorldObjects/Expanding/ESCP_AltmerSettlement</factionIconPath>
     <factionNameMaker>ESCP_NamerFactionAltmer</factionNameMaker>
     <settlementNameMaker>ESCP_NamerSettlementAltmerHouse</settlementNameMaker>
-    <allowedCultures>
+    <allowedCultures Inherit="False">
 		<li>ESCP_Altmeri</li>
 	</allowedCultures>
     <!-- Don't enable unless there are actually backstories -->

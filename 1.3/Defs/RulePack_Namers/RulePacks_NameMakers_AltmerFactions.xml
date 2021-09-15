@@ -8,14 +8,14 @@
         <li>r_name->[AltmerCities]</li>
         <li>r_name->The [a] [c]</li>
         <li>r_name->[c] of the [b]</li>
-        <li>r_name->[c] of [d]</li>
+        <li>r_name->[c] of [AltmerGods]</li>
       </rulesStrings>
 	  <rulesFiles>
         <li>AltmerCities->ESCP_AltmerNames/AltmerCities</li>
         <li>a->ESCP_AltmerNames/AltmerFactionA</li>
         <li>b->ESCP_AltmerNames/AltmerFactionB</li>
         <li>c->ESCP_AltmerNames/AltmerFactionC</li>
-        <li>d->ESCP_AltmerNames/AltmerFactionD</li>
+        <li>AltmerGods->ESCP_AltmerNames/AltmerGods</li>
       </rulesFiles>
     </rulePack>
   </RulePackDef>

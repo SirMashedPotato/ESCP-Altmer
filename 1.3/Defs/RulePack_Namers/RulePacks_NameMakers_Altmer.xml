@@ -3,9 +3,15 @@
 
 	<RulePackDef>
 		<defName>ESCP_NamerPersonAltmerMale</defName>
+		<include>
+		  <li>TribalWordUtility</li>
+		</include>
 		<rulePack>
 			<rulesStrings>
 				<li>name->[MaleList] [FamilyList]</li>
+				<li>name(p=0.05)->[MaleList] 'the [Animal] of [AltmerCities]' [FamilyList]</li>
+				<li>name(p=0.05)->[MaleList] 'the [a] [b]' [FamilyList]</li>
+				<li>name(p=0.01)->[MaleList] 'chosen of [AltmerGods]' [FamilyList]</li>
 			</rulesStrings>
 			<rulesRaw>
 				<li Class="Rule_File">
@@ -17,14 +23,27 @@
 					<path>ESCP_AltmerNames/AltmerFamily</path>
 				</li>
 			</rulesRaw>
+			<rulesFiles>
+				<li>AltmerCities->ESCP_AltmerNames/AltmerCities</li>
+				<li>a->ESCP_AltmerNames/AltmerFactionA</li>
+				<li>b->ESCP_AltmerNames/AltmerFactionB</li>
+				<li>c->ESCP_AltmerNames/AltmerFactionC</li>
+				<li>AltmerGods->ESCP_AltmerNames/AltmerGods</li>
+			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
 
 	<RulePackDef>
 		<defName>ESCP_NamerPersonAltmerFemale</defName>
+		<include>
+		  <li>TribalWordUtility</li>
+		</include>
 		<rulePack>
 			<rulesStrings>
 				<li>name->[FemaleList] [FamilyList]</li>
+				<li>name(p=0.05)->[FemaleList] 'the [Animal] of [AltmerCities]' [FamilyList]</li>
+				<li>name(p=0.05)->[FemaleList] 'the [a] [b]' [FamilyList]</li>
+				<li>name(p=0.01)->[FemaleList] 'chosen of [AltmerGods]' [FamilyList]</li>
 			</rulesStrings>
 			<rulesRaw>
 				<li Class="Rule_File">
@@ -36,6 +55,13 @@
 					<path>ESCP_AltmerNames/AltmerFamily</path>
 				</li>
 			</rulesRaw>
+			<rulesFiles>
+				<li>AltmerCities->ESCP_AltmerNames/AltmerCities</li>
+				<li>a->ESCP_AltmerNames/AltmerFactionA</li>
+				<li>b->ESCP_AltmerNames/AltmerFactionB</li>
+				<li>c->ESCP_AltmerNames/AltmerFactionC</li>
+				<li>AltmerGods->ESCP_AltmerNames/AltmerGods</li>
+			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
 	

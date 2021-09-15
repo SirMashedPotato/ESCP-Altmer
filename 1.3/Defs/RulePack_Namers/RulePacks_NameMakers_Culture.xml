@@ -21,5 +21,20 @@
       </rulesStrings>
     </rulePack>
   </RulePackDef>
+  
+  <RulePackDef>
+    <defName>ESCP_NamerDeity_Altmeri</defName>
+	<include>
+      <li>NamerDeityGlobal</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[AltmerGods]</li>
+      </rulesStrings>
+	  <rulesFiles>
+        <li>AltmerGods->ESCP_AltmerNames/AltmerGods</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
 
 </Defs>
