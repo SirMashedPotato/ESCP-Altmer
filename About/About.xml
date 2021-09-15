@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>ESCP - Altmer</name>
+	<packageId>SirMashedPotato.ESCP.Altmer</packageId>
+	<author>SirMashedPotato</author>
+	<supportedVersions>
+    	<li>1.3</li>
+	</supportedVersions>
+	<description>Adds in the Altmer using Humanoid Alien Race Framework. Altmer are fairly similar to humans. They have much higher psychic sensitivity, toxic sensitivity and learning speed. They have an increased social impact, researching speed and immunity gain speed. They have a decreased base health and mining speed.\n\n-Supports Vanilla Achievements Expanded\n-Requires Harmony\n-Requires Humanoid Alien Races 2.0\n-Based on the 'Elder Scrolls' series by Bethesda Game Studios.
+	</description>
+	<modDependencies>
+	  <li>
+        <packageId>brrainz.harmony</packageId>
+		<displayName>Harmony</displayName>
+		<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+		<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+      </li>
+      <li>
+        <packageId>erdelf.HumanoidAlienRaces</packageId>
+        <displayName>Humanoid Alien Races 2.0 </displayName>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
+      </li>
+    </modDependencies>
+	<loadAfter>
+	  <li>brrainz.harmony</li>
+      <li>Ludeon.RimWorld</li>
+      <li>Ludeon.RimWorld.Ideology</li>
+	  <li>Ludeon.RimWorld.Royalty</li>
+      <li>erdelf.HumanoidAlienRaces</li>
+	  <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+    </loadAfter>
+	<loadBefore>
+	</loadBefore>
+	<incompatibleWith>
+      <li>SirMashedPotato.MorrowRim.AltmerRace</li>
+      <li>SirMashedPotato.MorrowRim.AltmerFactions</li>
+      <li>SirMashedPotato.MorrowRim.AltmerFactionsMedieval</li>
+    </incompatibleWith>
+
+</ModMetaData>
