@@ -13,7 +13,7 @@
 			<!-- increase the enchantability of stuff -->
 
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "MorrowRim_LeatherAltmer"]/comps</xpath>
+				<xpath>/Defs/ThingDef[defName = "ESCP_LeatherAltmer"]/comps</xpath>
 				<value>
 					<li Class="TorannMagic.Enchantment.CompProperties_EnchantedStuff">
 						<isEnchanted>true</isEnchanted>
@@ -26,7 +26,7 @@
 			<!-- edit descriptions to reflect this -->
 
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "MorrowRim_LeatherAltmer"]/description</xpath>
+				<xpath>/Defs/ThingDef[defName = "ESCP_LeatherAltmer"]/description</xpath>
 				<value>
 					<description>Tanned, dried, scraped Altmer skin. Most people find this material horrifying. Some find it fascinating.\n\nDue to its inherit magical properties, any gear made of Altmer leather will increase the wielders maximum energy, as well as increase the potency of any other enchantments on the gear.</description>
 				</value>
