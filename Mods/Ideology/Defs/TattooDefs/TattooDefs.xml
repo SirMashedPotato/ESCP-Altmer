@@ -2,10 +2,9 @@
 <Defs>
 
   <!-- Altmer -->
-	<!--
 	<TattooDef>
 		<defName>Face_Altmer1</defName>
-		<label>Altmer male 1</label>
+		<label>Altmer 1</label>
 		<texPath>Things/Pawn/Humanlike/ESCP_Tattoos/Face_Altmer1/Face_Altmer1</texPath>
 		<tattooType>Face</tattooType>
 		<category>ESCP_AltmerStyle</category>
@@ -17,7 +16,7 @@
 	
 	<TattooDef>
 		<defName>Face_Altmer2</defName>
-		<label>Altmer male 2</label>
+		<label>Altmer 2</label>
 		<texPath>Things/Pawn/Humanlike/ESCP_Tattoos/Face_Altmer2/Face_Altmer2</texPath>
 		<tattooType>Face</tattooType>
 		<category>ESCP_AltmerStyle</category>
@@ -29,7 +28,7 @@
 	
 	<TattooDef>
 		<defName>Face_Altmer3</defName>
-		<label>Altmer male 3</label>
+		<label>Altmer 3</label>
 		<texPath>Things/Pawn/Humanlike/ESCP_Tattoos/Face_Altmer3/Face_Altmer3</texPath>
 		<tattooType>Face</tattooType>
 		<category>ESCP_AltmerStyle</category>
@@ -41,7 +40,7 @@
 	
 	<TattooDef>
 		<defName>Face_Altmer4</defName>
-		<label>Altmer male 4</label>
+		<label>Altmer 4</label>
 		<texPath>Things/Pawn/Humanlike/ESCP_Tattoos/Face_Altmer4/Face_Altmer4</texPath>
 		<tattooType>Face</tattooType>
 		<category>ESCP_AltmerStyle</category>
@@ -50,77 +49,5 @@
 			<li>TattooFaceAltmer</li>
 		</styleTags>
 	</TattooDef>
-	
-	<TattooDef>
-		<defName>Face_Altmer5</defName>
-		<label>Altmer male 5</label>
-		<texPath>Things/Pawn/Humanlike/ESCP_Tattoos/Face_Altmer5/Face_Altmer5</texPath>
-		<tattooType>Face</tattooType>
-		<category>ESCP_AltmerStyle</category>
-		<visibleNorth>false</visibleNorth>
-		<styleTags>
-			<li>TattooFaceAltmer</li>
-		</styleTags>
-	</TattooDef>
-	
-	<TattooDef>
-		<defName>Face_Altmer6</defName>
-		<label>Altmer female 1</label>
-		<texPath>Things/Pawn/Humanlike/ESCP_Tattoos/Face_Altmer6/Face_Altmer6</texPath>
-		<tattooType>Face</tattooType>
-		<category>ESCP_AltmerStyle</category>
-		<visibleNorth>false</visibleNorth>
-		<styleTags>
-			<li>TattooFaceAltmer</li>
-		</styleTags>
-	</TattooDef>
-	
-	<TattooDef>
-		<defName>Face_Altmer7</defName>
-		<label>Altmer female 2</label>
-		<texPath>Things/Pawn/Humanlike/ESCP_Tattoos/Face_Altmer7/Face_Altmer7</texPath>
-		<tattooType>Face</tattooType>
-		<category>ESCP_AltmerStyle</category>
-		<visibleNorth>false</visibleNorth>
-		<styleTags>
-			<li>TattooFaceAltmer</li>
-		</styleTags>
-	</TattooDef>
-	
-	<TattooDef>
-		<defName>Face_Altmer8</defName>
-		<label>Altmer female 3</label>
-		<texPath>Things/Pawn/Humanlike/ESCP_Tattoos/Face_Altmer8/Face_Altmer8</texPath>
-		<tattooType>Face</tattooType>
-		<category>ESCP_AltmerStyle</category>
-		<visibleNorth>false</visibleNorth>
-		<styleTags>
-			<li>TattooFaceAltmer</li>
-		</styleTags>
-	</TattooDef>
-	
-	<TattooDef>
-		<defName>Face_Altmer9</defName>
-		<label>Altmer female 4</label>
-		<texPath>Things/Pawn/Humanlike/ESCP_Tattoos/Face_Altmer9/Face_Altmer9</texPath>
-		<tattooType>Face</tattooType>
-		<category>ESCP_AltmerStyle</category>
-		<visibleNorth>false</visibleNorth>
-		<styleTags>
-			<li>TattooFaceAltmer</li>
-		</styleTags>
-	</TattooDef>
-	
-	<TattooDef>
-		<defName>Face_Altmer1-</defName>
-		<label>Altmer female 5</label>
-		<texPath>Things/Pawn/Humanlike/ESCP_Tattoos/Face_Altmer10/Face_Altmer10</texPath>
-		<tattooType>Face</tattooType>
-		<category>ESCP_AltmerStyle</category>
-		<visibleNorth>false</visibleNorth>
-		<styleTags>
-			<li>TattooFaceAltmer</li>
-		</styleTags>
-	</TattooDef>
-	-->
+
 </Defs>
