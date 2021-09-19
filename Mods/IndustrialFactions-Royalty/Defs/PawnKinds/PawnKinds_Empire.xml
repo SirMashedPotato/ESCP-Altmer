@@ -103,7 +103,7 @@
   
   <!--===================== Imperial royals =========================-->
   
-    <PawnKindDef ParentName="RoyalBase">
+    <PawnKindDef ParentName="RoyalBase" MayRequire="Ludeon.RimWorld.Royalty">
     <defName>ESCP_AltmerEmpire_Royal_NobleWimp</defName>
     <label>noble</label>
 	<race>ESCP_AltmerRace</race>
@@ -162,7 +162,7 @@
     <initialResistanceRange>26~40</initialResistanceRange>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="RoyalBase">
+  <PawnKindDef ParentName="RoyalBase" MayRequire="Ludeon.RimWorld.Royalty">
     <defName>ESCP_AltmerEmpire_Royal_Yeoman</defName>
     <label>yeoman</label>
 	<race>ESCP_AltmerRace</race>
@@ -223,7 +223,7 @@
     <initialResistanceRange>38~58</initialResistanceRange>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="RoyalLowerBase">
+  <PawnKindDef ParentName="RoyalLowerBase" MayRequire="Ludeon.RimWorld.Royalty">
     <defName>ESCP_AltmerEmpire_Royal_Acolyte</defName>
     <label>acolyte</label>
 	<race>ESCP_AltmerRace</race>
@@ -262,7 +262,7 @@
     <initialResistanceRange>37~56</initialResistanceRange>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="RoyalLowerBase">
+  <PawnKindDef ParentName="RoyalLowerBase" MayRequire="Ludeon.RimWorld.Royalty">
     <defName>ESCP_AltmerEmpire_Royal_Knight</defName>
     <label>knight</label>
 	<race>ESCP_AltmerRace</race>
@@ -301,7 +301,7 @@
     <initialResistanceRange>38~58</initialResistanceRange>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="RoyalLowerBase">
+  <PawnKindDef ParentName="RoyalLowerBase" MayRequire="Ludeon.RimWorld.Royalty">
     <defName>ESCP_AltmerEmpire_Royal_Praetor</defName>
     <label>praetor</label>
 	<race>ESCP_AltmerRace</race>
@@ -340,7 +340,7 @@
     <initialResistanceRange>38~58</initialResistanceRange>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="RoyalUpperBase">
+  <PawnKindDef ParentName="RoyalUpperBase" MayRequire="Ludeon.RimWorld.Royalty">
     <defName>ESCP_AltmerEmpire_Royal_Baron</defName>
     <label>baron</label>
 	<race>ESCP_AltmerRace</race>
@@ -389,7 +389,7 @@
     <initialResistanceRange>25~39</initialResistanceRange>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="RoyalUpperBase">
+  <PawnKindDef ParentName="RoyalUpperBase" MayRequire="Ludeon.RimWorld.Royalty">
     <defName>ESCP_AltmerEmpire_Royal_Count</defName>
     <label>count</label>
 	<race>ESCP_AltmerRace</race>
@@ -433,7 +433,7 @@
     <initialResistanceRange>38~58</initialResistanceRange>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="RoyalUpperBase">
+  <PawnKindDef ParentName="RoyalUpperBase" MayRequire="Ludeon.RimWorld.Royalty">
     <defName>ESCP_AltmerEmpire_Royal_Duke</defName>
     <label>duke</label>
 	<race>ESCP_AltmerRace</race>
@@ -479,7 +479,7 @@
     <initialResistanceRange>38~58</initialResistanceRange>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="RoyalBase">
+  <PawnKindDef ParentName="RoyalBase" MayRequire="Ludeon.RimWorld.Royalty">
     <defName>ESCP_AltmerEmpire_Royal_Consul</defName>
     <label>consul</label>
 	<race>ESCP_AltmerRace</race>
