@@ -10,8 +10,8 @@
 			<xpath>/Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
 			<value>
 				<li>ESCP_AltmerPlayerColony</li>
-				<li>ESCP_AltmerPlayerKingdom</li>
 				<li>ESCP_AltmerPlayerTribe</li>
+				<li>ESCP_AltmerPlayerKingdom</li>
 			</value>
 		</match>
 	</Operation>

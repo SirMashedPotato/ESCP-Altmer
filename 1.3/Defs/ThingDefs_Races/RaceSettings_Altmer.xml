@@ -78,6 +78,19 @@
 						<li>ESCP_AltmerPlayerTribe</li> 
 					</factionDefs>
 				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>ESCP_AltmerMedievalKind</li>
+							</kindDefs>
+							<chance>100.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>ESCP_AltmerPlayerKingdom</li> 
+					</factionDefs>
+				</li>
 			</alienwandererkinds>
 		</pawnKindSettings>
 	</AlienRace.RaceSettings>

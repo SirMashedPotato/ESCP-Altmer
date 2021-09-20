@@ -74,6 +74,7 @@
 		<backstoryCategories>
 		  <li>Tribal</li>
 		  <li>ESCP_AltmerTribal</li>
+		  <li>ESCP_AltmerMedieval</li>
 		</backstoryCategories>
 		<combatPower>40</combatPower>
 		<baseRecruitDifficulty>0.80</baseRecruitDifficulty>
