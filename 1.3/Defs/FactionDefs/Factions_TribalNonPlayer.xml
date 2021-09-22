@@ -226,11 +226,6 @@
       </li>
     </pawnGroupMakers>
     <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
-	<apparelStuffFilter>
-			<thingDefs>
-				<li>Cloth</li>
-			</thingDefs>
-		</apparelStuffFilter>
   </FactionDef>
 
   <ThingSetMakerDef>
