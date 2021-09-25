@@ -4,6 +4,27 @@
   <!-- Tribal -->
 
   <FactionDef ParentName="TribeBase" Name="ESCP_AltmerTribeBase" Abstract="True">
+	<modExtensions>
+		<li Class="ESCP_RaceTools.SettlementPreference">
+			<chance>1.0</chance>
+			<useTemperatureRange>true</useTemperatureRange>
+			<temperatureRangeMin>0</temperatureRangeMin>
+			<temperatureRangeMax>35</temperatureRangeMax>
+			<useSwampinessRange>true</useSwampinessRange>
+			<swampinessRangeMin>0.0</swampinessRangeMin>
+			<swampinessRangeMax>0.5</swampinessRangeMax>
+			<useRainfallRange>true</useRainfallRange>
+			<rainfallRangeMin>500</rainfallRangeMin>
+			<rainfallRangeMax>1000</rainfallRangeMax>
+			<dislikedBiomeList>
+				<li>MorrowRim_Ashlands</li>
+				<li>MorrowRim_VolcanicAshlands</li>
+				<li>MorrowRim_AshSwamp</li>
+				<li>Rainforest</li>
+			</dislikedBiomeList>
+			<IgnoreBiomeSelectionWeight>false</IgnoreBiomeSelectionWeight>
+        </li>
+	</modExtensions>
     <leaderTitle>archmagister</leaderTitle>
     <requiredCountAtGameStart>0</requiredCountAtGameStart>
 	<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
