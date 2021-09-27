@@ -95,7 +95,7 @@
           <ESCP_AltmerTribal_ChiefRanged>5</ESCP_AltmerTribal_ChiefRanged>
         </options>
       </li>
-	  <li MayRequire="SirMashedPotato.ESCP.Orsimer">
+	  <li MayRequire="SirMashedPotato.ESCP.Bosmer">
         <!-- Normal fights, melee only with Bosmer mix-ins -->
         <kindDef>Combat</kindDef>
         <commonality>40</commonality>
