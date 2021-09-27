@@ -44,7 +44,7 @@
 				<!-- Patching quests -->
 				
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/QuestScriptDef[defName="Util_ChooseRandomQuestLodgerKind"]/root[@Class="QuestNode_Sequence"]/nodes/li[@Class="QuestNode_IsSet"]/node[@Class="QuestNode_GetRandomPawnKindForFaction"]/choices/li[factionDef="Empire"]</xpath>
+					<xpath>/Defs/QuestScriptDef[defName="Util_ChooseRandomQuestLodgerKind"]/root[@Class="QuestNode_Sequence"]/nodes/li[@Class="QuestNode_IsSet"]/node[@Class="QuestNode_GetRandomPawnKindForFaction"]/choices/li[factionDef="Empire"]/pawnKinds</xpath>
 					<value>
 						<li>ESCP_AltmerEmpire_Common_Lodger</li>
 					</value>
@@ -70,7 +70,6 @@
                             <pawnKinds>
                                 <li>ESCP_AltmerEmpire_Royal_NobleWimp</li>
                                 <li>ESCP_AltmerEmpire_Royal_Yeoman</li>
-								<li>ESCP_AltmerEmpire_Royal_Esquire</li>
 								<li>ESCP_AltmerEmpire_Royal_Knight</li>
 								<li>ESCP_AltmerEmpire_Royal_Praetor</li>
 								<li>ESCP_AltmerEmpire_Royal_Baron</li>
