@@ -3,7 +3,7 @@
 
   <!-- Tribal -->
 
-  <FactionDef ParentName="TribeBase" Name="ESCP_AltmerTribeBase" Abstract="True">
+  <FactionDef ParentName="ESCP_FactionBase" Name="ESCP_AltmerTribeBase" Abstract="True">
 	<modExtensions>
 		<li Class="ESCP_RaceTools.SettlementPreference">
 			<chance>1.0</chance>
@@ -25,15 +25,10 @@
 			<IgnoreBiomeSelectionWeight>false</IgnoreBiomeSelectionWeight>
         </li>
 	</modExtensions>
-    <leaderTitle>archmagister</leaderTitle>
-    <requiredCountAtGameStart>0</requiredCountAtGameStart>
-	<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
-    <canMakeRandomly>true</canMakeRandomly>
-    <canStageAttacks>true</canStageAttacks>
     <factionIconPath>World/WorldObjects/Expanding/ESCP_AltmerSettlement</factionIconPath>
     <factionNameMaker>ESCP_NamerFactionAltmer</factionNameMaker>
     <settlementNameMaker>ESCP_NamerSettlementAltmerHouse</settlementNameMaker>
-    <allowedCultures Inherit="False">
+    <allowedCultures>
 		<li>ESCP_Altmeri</li>
 	</allowedCultures>
     <!-- Don't enable unless there are actually backstories -->
@@ -48,27 +43,15 @@
 		</backstoryFilters>
 		-->
     <caravanTraderKinds>
-      <li>Caravan_Neolithic_BulkGoods</li>
-      <li>Caravan_Neolithic_WarMerchant</li>
-      <li>Caravan_Neolithic_Slaver</li>
-      <li>Caravan_Neolithic_ShamanMerchant</li>
-	  <!-- VE Medieval -->
-	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_Farmer</li>
 	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_WineMerchant</li>
 	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_ArtPatron</li>
-	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_Armourer</li>
-	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_Weaponsmith</li>
     </caravanTraderKinds>
     <visitorTraderKinds>
-      <li>Visitor_Neolithic_Standard</li>
-	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Visitor_Medieval_Standard</li>
     </visitorTraderKinds>
     <baseTraderKinds>
-      <li>Base_Neolithic_Standard</li>
-	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Base_Medieval_Standard</li>
     </baseTraderKinds>
     <raidLootMaker>ESCP_AltmerTribeRaidLootMaker</raidLootMaker>
-    <pawnGroupMakers Inherit="false">
+    <pawnGroupMakers>
       <li>
         <!-- Normal fights, ranged with melee mix-ins -->
         <kindDef>Combat</kindDef>

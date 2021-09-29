@@ -10,7 +10,6 @@
 			  <MoveSpeed>4.6</MoveSpeed>
 			  <ComfyTemperatureMin>12</ComfyTemperatureMin>
 			  <ComfyTemperatureMax>28</ComfyTemperatureMax>
-			  <LeatherAmount>50</LeatherAmount>
 			  <PsychicSensitivity>1.5</PsychicSensitivity>
 			  <ToxicSensitivity>1.5</ToxicSensitivity>
 			  <ImmunityGainSpeed>1.25</ImmunityGainSpeed>
