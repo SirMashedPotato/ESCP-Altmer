@@ -250,7 +250,7 @@
   
   <FactionDef ParentName="ESCP_AltmerTribeBase">
     <defName>ESCP_AltmerTribeCivil</defName>
-    <label>gentle Altmer colonies</label>
+    <label>Altmer colonies</label>
 	<description>A collection of Altmer colonies. Altmer prefer to be left to their own devices, but also enjoy forcefully spreading these devices to others. Gaining an alliance with the Altmer colonies may prove reasonably difficult, keeping it will prove even more challenging.\n\nAltmer are well aware of their weaknesses in combat. They often raise Goblin slave armies, or conscript Bosmer archers and Orsimer beserkers, for use in combat. This may prove useful to anyone who manages to forge an allaince with the Altmer.\n\nThese particular colonies pursues a gentle way of life where they can. They are quite open to trade and alliances, even with strange peoples.</description>
 	<colorSpectrum>
       <li>(0.3, 0.6, 0.7)</li>
@@ -271,8 +271,8 @@
 
   <FactionDef ParentName="ESCP_AltmerTribeBase">
     <defName>ESCP_AltmerTribeRough</defName>
-    <label>fierce Altmer colonies</label>
-	<description>A collection of Altmer colonies. Altmer prefer to be left to their own devices, but also enjoy forcefully spreading these devices to others. Gaining an alliance with the Altmer colonies may prove reasonably difficult, keeping it will prove even more challenging.\n\nAltmer are well aware of their weaknesses in combat. They often raise Goblin slave armies, or conscript Bosmer archers and Orsimer beserkers, for use in combat. This may prove useful to anyone who manages to forge an allaince with the Altmer.\n\nThese particular colonies value warlike dominance; it may be difficult to turn them into an ally.</description>	
+    <label>separatist Altmer colonies</label>
+	<description>A collection of Altmer colonies. Altmer prefer to be left to their own devices, but also enjoy forcefully spreading these devices to others. Gaining an alliance with the Altmer colonies may prove reasonably difficult, keeping it will prove even more challenging.\n\nAltmer are well aware of their weaknesses in combat. They often raise Goblin slave armies, or conscript Bosmer archers and Orsimer beserkers, for use in combat. This may prove useful to anyone who manages to forge an allaince with the Altmer.\n\nThese particular colonies are ruled by a separatist movement; it may be difficult to turn them into an ally.</description>	
 	<colorSpectrum>
       <li>(0.5, 0.8, 0.3)</li>
       <li>(0.8, 0.3, 0.5)</li>
