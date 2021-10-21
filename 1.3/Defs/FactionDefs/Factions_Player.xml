@@ -46,8 +46,8 @@
 		<label>New Altmer Tribe</label>
 		<description>A small Altmer tribe.</description>
 		<isPlayer>true</isPlayer>
-		<pawnSingular>altmer tribseman</pawnSingular>
-		<pawnsPlural>altmer tribsepeople</pawnsPlural>
+		<pawnSingular>Altmer tribseman</pawnSingular>
+		<pawnsPlural>Altmer tribsepeople</pawnsPlural>
 		<basicMemberKind>ESCP_AltmerTribalKind</basicMemberKind>
 		<techLevel>Neolithic</techLevel>
 		<backstoryFilters>
@@ -90,8 +90,8 @@
 		<label>New Altmer Kingdom</label>
 		<description>A small Altmer kingdom.</description>
 		<isPlayer>true</isPlayer>
-		<pawnSingular>altmer tribseman</pawnSingular>
-		<pawnsPlural>altmer tribsepeople</pawnsPlural>
+		<pawnSingular>Altmer tribseman</pawnSingular>
+		<pawnsPlural>Altmer tribsepeople</pawnsPlural>
 		<basicMemberKind>ESCP_AltmerMedievalKind</basicMemberKind>
 		<techLevel>Medieval</techLevel>
 		<backstoryFilters>
