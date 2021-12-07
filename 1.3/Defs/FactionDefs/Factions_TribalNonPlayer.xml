@@ -108,7 +108,9 @@
         </options>
       </li>
 	  <li MayRequire="SirMashedPotato.ESCP.Goblin">
-        <!-- Normal fights, ranged only with Goblin mix-ins -->
+        <!-- Normal fights, ranged only with Goblin mix-ins 
+			Don actually do nuthin right now
+		-->
         <kindDef>Combat</kindDef>
         <commonality>40</commonality>
         <options>
