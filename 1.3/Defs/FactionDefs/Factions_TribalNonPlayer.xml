@@ -308,7 +308,7 @@
 	<description>A collection of Altmer colonies. Altmer prefer to be left to their own devices, but also enjoy forcefully spreading these devices to others. Gaining an alliance with the Altmer colonies may prove reasonably difficult, keeping it will prove even more challenging.\n\nAltmer are well aware of their weaknesses in combat. They often raise Goblin slave armies, or conscript Bosmer archers and Orsimer beserkers, for use in combat. This may prove useful to anyone who manages to forge an allaince with the Altmer.\n\nThese particular colonies are part of an Aldmeri Dominion; they are only willing to ally with other Altmer factions.</description>	
 	<colorSpectrum>
       <li>(1.0, 1.0, 0.0)</li>
-      <li>(0.8, 0.8, 0.0)</li>
+      <li>(0.8, 0.6, 0.0)</li>
 	  <li>(0.7, 0.7, 0.2)</li>
     </colorSpectrum>
     <factionIconPath>World/WorldObjects/Expanding/ESCP_AltmerDominion</factionIconPath>
