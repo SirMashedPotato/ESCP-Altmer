@@ -310,11 +310,6 @@
 			
 			<thoughtSettings>
 				<cannotReceiveThoughts>
-					<li>AteInsectMeatDirect</li>
-					<li>AteInsectMeatAsIngredient</li>
-					<li MayRequire="SirMashedPotato.MorrowRim">MorrowRim_ateNixOxMilk</li>
-					<li MayRequire="SirMashedPotato.MorrowRim">MorrowRim_ateInsectEggDirect</li>
-					<li MayRequire="SirMashedPotato.MorrowRim">MorrowRim_ateInsectEggAsIngredient</li>
 				</cannotReceiveThoughts>
 				<replacerList>
 					<li>
