@@ -4,7 +4,13 @@
 	<AlienRace.ThingDef_AlienRace ParentName="ESCP_BasePawnMer">
 		<defName>ESCP_AltmerRace</defName>
 		<label>Altmer</label>
-		<description>An elven race whose colonies can be found in many places. The Altmer consider themselves to be the pinnacle of culture, often believing that all other races are far below them. This is actually often the case, as Altmer are one of the tallest races. Other races consider the Altmer to be extremely arrogant and abrasive. Regardless of these beliefs, they are easily won over by Altmeri beauty and intelligence.\n\nAltmer possess an unrivalled intellect, and are capable of learning new skills very quickly they are also highly sensitive to psychic effects, both good and bad. Altmer are somewhat frail, and instead rely on their intellect to win battles. This has resulted in them employing the use of other races in wars, most notably Goblin slaves and Bosmer or Orsimer conscripts.</description>
+		<description>An elven race whose colonies can be found in many places. The Altmer consider themselves to be the pinnacle of culture, often believing that all other races are far below them. This is actually often the case, as Altmer are one of the tallest races. Other races consider the Altmer to be extremely arrogant and abrasive. Regardless of these beliefs, they are easily won over by Altmeri beauty and intelligence.\n\nAltmer possess an unrivalled intellect, and are capable of learning new skills very quickly they are also highly sensitive to psychic effects, both good and bad. Altmer are somewhat frail, and instead rely on their intellect to win battles. This has resulted in them employing the use of other races in wars, most notably Goblin slaves and Bosmer or Orsimer conscripts. While considerably more susceptible to toxic effects, Altmer have heightened resistance to diseases, and as such gain immunity faster.\n\nThe expectations of Altmer are permanently increased by one level.</description>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.RaceProperties">
+				<modifiedExpectations>true</modifiedExpectations>
+				<expectationOffset>+1</expectationOffset>
+            </li>
+		</modExtensions>
 		<statBases>
 			  <MarketValue>1900</MarketValue>
 			  <MoveSpeed>4.6</MoveSpeed>
@@ -304,7 +310,19 @@
 			
 			<thoughtSettings>
 				<cannotReceiveThoughts>
+					<li>AteInsectMeatDirect</li>
+					<li>AteInsectMeatAsIngredient</li>
+					<li MayRequire="SirMashedPotato.MorrowRim">MorrowRim_ateNixOxMilk</li>
+					<li MayRequire="SirMashedPotato.MorrowRim">MorrowRim_ateInsectEggDirect</li>
+					<li MayRequire="SirMashedPotato.MorrowRim">MorrowRim_ateInsectEggAsIngredient</li>
 				</cannotReceiveThoughts>
+				<replacerList>
+					<li>
+						<original>AteWithoutTable</original>
+						<replacer>ESCP_AltmerAteWithoutTable</replacer> 
+					</li>
+
+				</replacerList>
 			</thoughtSettings>
 			
 			<relationSettings>

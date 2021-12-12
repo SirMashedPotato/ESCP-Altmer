@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Agreement - same -->
+
+  <GoodwillSituationDef>
+    <defName>ESCP_Altmer_Altmer</defName>
+    <label>Altmer</label>
+    <workerClass>ESCP_RaceTools.GoodwillSituationWorker_AltmerCompatibility</workerClass>
+    <naturalGoodwillOffset>25</naturalGoodwillOffset>
+  </GoodwillSituationDef>
+  
+  <!-- disagreement -->
+  
+  <GoodwillSituationDef>
+    <defName>ESCP_Altmer_NonAltmer</defName>
+    <label>not Altmer</label>
+    <workerClass>ESCP_RaceTools.GoodwillSituationWorker_AltmerDominionCompatibility</workerClass>
+    <naturalGoodwillOffset>-100</naturalGoodwillOffset>
+  </GoodwillSituationDef>
+
+</Defs>

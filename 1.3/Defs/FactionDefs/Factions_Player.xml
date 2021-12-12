@@ -39,6 +39,11 @@
 			<li>Synthread</li>
 		  </thingDefs>
 		</apparelStuffFilter>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<isAltmerFaction>true</isAltmerFaction>
+			</li>
+		</modExtensions>
 	</FactionDef>
 	
 	<FactionDef ParentName="PlayerFactionBase">
@@ -83,6 +88,11 @@
 		<recipePrerequisiteTags>
 		  <li>Tribal</li>
 		</recipePrerequisiteTags>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<isAltmerFaction>true</isAltmerFaction>
+			</li>
+		</modExtensions>
 	</FactionDef>
 	
 	<FactionDef ParentName="PlayerFactionBase">
@@ -126,6 +136,11 @@
 		<recipePrerequisiteTags>
 		  <li>Tribal</li>
 		</recipePrerequisiteTags>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<isAltmerFaction>true</isAltmerFaction>
+			</li>
+		</modExtensions>
 	</FactionDef>
 
 </Defs>
