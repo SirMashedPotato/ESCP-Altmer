@@ -18,6 +18,7 @@
 			<rainfallRangeMax>1500</rainfallRangeMax>
 			<dislikedBiomeList>
 				<li>MorrowRim_Ashlands</li>
+				<li>MorrowRim_BlightedAshlands</li>
 				<li>MorrowRim_VolcanicAshlands</li>
 				<li>MorrowRim_AshSwamp</li>
 				<li>Rainforest</li>
