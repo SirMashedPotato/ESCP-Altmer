@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods> 
+				
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
 
   <!--===================== Imperial civilians =========================-->
 
-  <PawnKindDef ParentName="EmpireCommonerBase" MayRequire="Ludeon.RimWorld.Royalty">
+  <PawnKindDef ParentName="EmpireCommonerBase">
     <defName>ESCP_AltmerEmpire_Common_Lodger</defName>
     <label>imperial citizen</label>
     <race>ESCP_AltmerRace</race>
@@ -45,7 +54,7 @@
     <initialResistanceRange>10~17</initialResistanceRange>
   </PawnKindDef>
 
-  <PawnKindDef  ParentName="EmpireCommonerBase" MayRequire="Ludeon.RimWorld.Royalty">
+  <PawnKindDef ParentName="EmpireCommonerBase">
     <defName>ESCP_AltmerEmpire_Common_Trader</defName>
     <label>imperial trader</label>
     <race>ESCP_AltmerRace</race>
@@ -103,7 +112,7 @@
   
   <!--===================== Imperial royals =========================-->
   
-    <PawnKindDef ParentName="RoyalBase" MayRequire="Ludeon.RimWorld.Royalty">
+    <PawnKindDef ParentName="RoyalBase">
     <defName>ESCP_AltmerEmpire_Royal_NobleWimp</defName>
     <label>noble</label>
 	<race>ESCP_AltmerRace</race>
@@ -162,7 +171,7 @@
     <initialResistanceRange>26~40</initialResistanceRange>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="RoyalBase" MayRequire="Ludeon.RimWorld.Royalty">
+  <PawnKindDef ParentName="RoyalBase">
     <defName>ESCP_AltmerEmpire_Royal_Yeoman</defName>
     <label>yeoman</label>
 	<race>ESCP_AltmerRace</race>
@@ -223,7 +232,7 @@
     <initialResistanceRange>38~58</initialResistanceRange>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="RoyalLowerBase" MayRequire="Ludeon.RimWorld.Royalty">
+  <PawnKindDef ParentName="RoyalLowerBase">
     <defName>ESCP_AltmerEmpire_Royal_Acolyte</defName>
     <label>acolyte</label>
 	<race>ESCP_AltmerRace</race>
@@ -262,7 +271,7 @@
     <initialResistanceRange>37~56</initialResistanceRange>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="RoyalLowerBase" MayRequire="Ludeon.RimWorld.Royalty">
+  <PawnKindDef ParentName="RoyalLowerBase">
     <defName>ESCP_AltmerEmpire_Royal_Knight</defName>
     <label>knight</label>
 	<race>ESCP_AltmerRace</race>
@@ -301,7 +310,7 @@
     <initialResistanceRange>38~58</initialResistanceRange>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="RoyalLowerBase" MayRequire="Ludeon.RimWorld.Royalty">
+  <PawnKindDef ParentName="RoyalLowerBase">
     <defName>ESCP_AltmerEmpire_Royal_Praetor</defName>
     <label>praetor</label>
 	<race>ESCP_AltmerRace</race>
@@ -340,7 +349,7 @@
     <initialResistanceRange>38~58</initialResistanceRange>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="RoyalUpperBase" MayRequire="Ludeon.RimWorld.Royalty">
+  <PawnKindDef ParentName="RoyalUpperBase">
     <defName>ESCP_AltmerEmpire_Royal_Baron</defName>
     <label>baron</label>
 	<race>ESCP_AltmerRace</race>
@@ -389,7 +398,7 @@
     <initialResistanceRange>25~39</initialResistanceRange>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="RoyalUpperBase" MayRequire="Ludeon.RimWorld.Royalty">
+  <PawnKindDef ParentName="RoyalUpperBase">
     <defName>ESCP_AltmerEmpire_Royal_Count</defName>
     <label>count</label>
 	<race>ESCP_AltmerRace</race>
@@ -433,7 +442,7 @@
     <initialResistanceRange>38~58</initialResistanceRange>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="RoyalUpperBase" MayRequire="Ludeon.RimWorld.Royalty">
+  <PawnKindDef ParentName="RoyalUpperBase">
     <defName>ESCP_AltmerEmpire_Royal_Duke</defName>
     <label>duke</label>
 	<race>ESCP_AltmerRace</race>
@@ -479,7 +488,7 @@
     <initialResistanceRange>38~58</initialResistanceRange>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="RoyalBase" MayRequire="Ludeon.RimWorld.Royalty">
+  <PawnKindDef ParentName="RoyalBase">
     <defName>ESCP_AltmerEmpire_Royal_Consul</defName>
     <label>consul</label>
 	<race>ESCP_AltmerRace</race>
@@ -532,4 +541,9 @@
     <initialResistanceRange>19~30</initialResistanceRange>
   </PawnKindDef>
 
-</Defs>
+			</value>
+		</match>
+	</Operation>
+	
+</Patch>
+
