@@ -291,7 +291,6 @@
     <naturalEnemy>true</naturalEnemy>
 	<requiredMemes>
 		<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
 	</requiredMemes>
     <disallowedMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
@@ -316,7 +315,6 @@
 	<factionNameMaker>ESCP_NamerFactionAltmerDominion</factionNameMaker>
     <naturalEnemy>true</naturalEnemy>
 	<requiredMemes>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
 		<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
 	</requiredMemes>
     <disallowedMemes>
@@ -341,7 +339,6 @@
     <permanentEnemy>true</permanentEnemy>
 	<factionNameMaker>ESCP_NamerFactionAltmerRaider</factionNameMaker>
     <requiredMemes>
-	  <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
     </requiredMemes>
