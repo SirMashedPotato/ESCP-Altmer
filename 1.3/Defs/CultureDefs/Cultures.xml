@@ -12,6 +12,55 @@
     <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerCorunan</deityTypeMaker>
     <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalCorunan</festivalNameMaker>
     <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">ESCP_LeaderTitleMaker_Altmeri</leaderTitleMaker>
+	
+	<modExtensions>
+		<li Class="ESCP_RaceTools.IdeoCultureProperties">
+			<overrideDivines>true</overrideDivines>
+			<divinesList>
+				<li>
+					<name>Auri-El</name>
+					<type>King of the Aldmer</type>
+					<iconPath>UI/Deities/ESCP_DeityAuriEl</iconPath>
+				</li>
+				<li>
+					<name>Magnus</name>
+					<type>the God of Sorcery</type>
+					<iconPath>UI/Deities/ESCP_DeityMagnus</iconPath>
+				</li>
+				<li>
+					<name>Trinimac</name>
+					<type>the Golden Champion</type>
+					<iconPath>UI/Deities/ESCP_DeityTrinimac</iconPath>
+				</li>
+				<li>
+					<name>Y'ffre</name>
+					<type>the God of the Forest</type>
+					<iconPath>UI/Deities/ESCP_DeityYffre</iconPath>
+				</li>
+				<li>
+					<name>Xarxes</name>
+					<type>the God of Ancestry</type>
+					<iconPath>UI/Deities/ESCP_DeityXarxes</iconPath>
+				</li>
+				<li>
+					<name>Mara</name>
+					<type>the Godess of Love</type>
+					<iconPath>UI/Deities/ESCP_DeityMara</iconPath>
+				</li>
+				<li>
+					<name>Stendarr</name>
+					<type>the God of Mercy</type>
+					<iconPath>UI/Deities/ESCP_DeityStendarr</iconPath>
+				</li>
+				<li>
+					<name>Syrabane</name>
+					<type>the Warlock's God</type>
+					<iconPath>UI/Deities/ESCP_DeitySyrabane</iconPath>
+				</li>
+			</divinesList>
+        </li>
+	</modExtensions>
+	
     <allowedPlaceTags>
       <li>OriginTribal</li>
     </allowedPlaceTags>

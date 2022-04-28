@@ -35,6 +35,9 @@
     <allowedCultures>
 		<li>ESCP_Altmeri</li>
 	</allowedCultures>
+	<structureMemeWeights>
+		  <ESCP_Structure_OriginDivinesEight MayRequire="Ludeon.RimWorld.Ideology">10</ESCP_Structure_OriginDivinesEight>
+	</structureMemeWeights>
     <!-- Don't enable unless there are actually backstories -->
 		<!--
 		<backstoryFilters>
