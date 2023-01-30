@@ -7,12 +7,10 @@
 		<description>Carriers of this gene exhibit some of the bonuses typically displayed by the Altmer race, though at a comparatively weaker level.</description>
 		<iconPath>UI/Icons/Genes/ESCP_InheritedBonus/ESCP_GeneInheritedBonus_Altmer</iconPath>
 		<statOffsets>
-			<ComfyTemperatureMax>2</ComfyTemperatureMax>
-			<ToxicResistance>0.1</ToxicResistance>
+			<PsychicSensitivity>0.15</PsychicSensitivity>
+			<Flammability>0.1</Flammability>
 			<ImmunityGainSpeed>0.1</ImmunityGainSpeed>
-			<InjuryHealingFactor>0.05</InjuryHealingFactor>
-			<SocialImpact>-0.1</SocialImpact>
-			<SwimSpeed MayRequireAnyOf="pyrce.swimming.modkit,BiomesTeam.BiomesIslands">1</SwimSpeed>
+			<GlobalLearningFactor>0.1</GlobalLearningFactor>
 		</statOffsets>
 		<displayOrderInCategory>1</displayOrderInCategory>
 	</GeneDef>

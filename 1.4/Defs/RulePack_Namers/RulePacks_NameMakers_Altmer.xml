@@ -1,68 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+	<!-- ========== [ESCP_Altmer_NamerMale] ========== -->
 	<RulePackDef>
-		<defName>ESCP_NamerPersonAltmerMale</defName>
-		<include>
-		  <li>TribalWordUtility</li>
-		</include>
+		<defName>ESCP_Altmer_NamerMale</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>name->[MaleList] [FamilyList]</li>
-				<li>name(p=0.05)->[MaleList] 'the [Animal] of [AltmerCities]' [FamilyList]</li>
-				<li>name(p=0.05)->[MaleList] 'the [a] [b]' [FamilyList]</li>
-				<li>name(p=0.01)->[MaleList] 'chosen of [AltmerGods]' [FamilyList]</li>
 			</rulesStrings>
-			<rulesRaw>
-				<li Class="Rule_File">
-					<keyword>MaleList</keyword>
-					<path>ESCP_AltmerNames/AltmerMale</path>
-				</li>
-				<li Class="Rule_File">
-					<keyword>FamilyList</keyword>
-					<path>ESCP_AltmerNames/AltmerFamily</path>
-				</li>
-			</rulesRaw>
 			<rulesFiles>
-				<li>AltmerCities->ESCP_AltmerNames/AltmerCities</li>
-				<li>a->ESCP_AltmerNames/AltmerFactionA</li>
-				<li>b->ESCP_AltmerNames/AltmerFactionB</li>
-				<li>c->ESCP_AltmerNames/AltmerFactionC</li>
-				<li>AltmerGods->ESCP_AltmerNames/AltmerGods</li>
+				<li>MaleList->ESCP_AltmerNames/AltmerMale</li>
+				<li>FamilyList->ESCP_AltmerNames/AltmerFamily</li>
 			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
-
+	<!-- ========== [ESCP_Altmer_NamerFemale] ========== -->
 	<RulePackDef>
-		<defName>ESCP_NamerPersonAltmerFemale</defName>
-		<include>
-		  <li>TribalWordUtility</li>
-		</include>
+		<defName>ESCP_Altmer_NamerFemale</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>name->[FemaleList] [FamilyList]</li>
-				<li>name(p=0.05)->[FemaleList] 'the [Animal] of [AltmerCities]' [FamilyList]</li>
-				<li>name(p=0.05)->[FemaleList] 'the [a] [b]' [FamilyList]</li>
-				<li>name(p=0.01)->[FemaleList] 'chosen of [AltmerGods]' [FamilyList]</li>
 			</rulesStrings>
-			<rulesRaw>
-				<li Class="Rule_File">
-					<keyword>FemaleList</keyword>
-					<path>ESCP_AltmerNames/AltmerFemale</path>
-				</li>
-				<li Class="Rule_File">
-					<keyword>FamilyList</keyword>
-					<path>ESCP_AltmerNames/AltmerFamily</path>
-				</li>
-			</rulesRaw>
 			<rulesFiles>
-				<li>AltmerCities->ESCP_AltmerNames/AltmerCities</li>
-				<li>a->ESCP_AltmerNames/AltmerFactionA</li>
-				<li>b->ESCP_AltmerNames/AltmerFactionB</li>
-				<li>c->ESCP_AltmerNames/AltmerFactionC</li>
-				<li>AltmerGods->ESCP_AltmerNames/AltmerGods</li>
+				<li>FemaleList->ESCP_AltmerNames/AltmerFemale</li>
+				<li>FamilyList->ESCP_AltmerNames/AltmerFamily</li>
 			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
-	
 </Defs>

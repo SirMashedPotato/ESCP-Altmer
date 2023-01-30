@@ -1,356 +1,248 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  <!-- Tribal -->
-
-  <FactionDef ParentName="ESCP_FactionBase" Name="ESCP_AltmerTribeBase" Abstract="True">
-	<modExtensions>
-		<li Class="ESCP_RaceTools.SettlementPreference">
-			<chance>1.0</chance>
-			<useTemperatureRange>true</useTemperatureRange>
-			<temperatureRangeMin>-10</temperatureRangeMin>
-			<temperatureRangeMax>35</temperatureRangeMax>
-			<useSwampinessRange>true</useSwampinessRange>
-			<swampinessRangeMin>0.0</swampinessRangeMin>
-			<swampinessRangeMax>0.5</swampinessRangeMax>
-			<useRainfallRange>true</useRainfallRange>
-			<rainfallRangeMin>500</rainfallRangeMin>
-			<rainfallRangeMax>1500</rainfallRangeMax>
-			<dislikedBiomeList>
-				<li>MorrowRim_Ashlands</li>
-				<li>MorrowRim_BlightedAshlands</li>
-				<li>MorrowRim_VolcanicAshlands</li>
-				<li>MorrowRim_AshSwamp</li>
-				<li>Rainforest</li>
-			</dislikedBiomeList>
-			<IgnoreBiomeSelectionWeight>false</IgnoreBiomeSelectionWeight>
-        </li>
-		<li Class="ESCP_RaceTools.FactionProperties">
-			<isAltmerFaction>true</isAltmerFaction>
-        </li>
-	</modExtensions>
-    <factionIconPath>World/WorldObjects/Expanding/ESCP_AltmerSettlement</factionIconPath>
-    <factionNameMaker>ESCP_NamerFactionAltmer</factionNameMaker>
-    <settlementNameMaker>ESCP_NamerSettlementAltmerHouse</settlementNameMaker>
-    <allowedCultures>
-		<li>ESCP_Altmeri</li>
-	</allowedCultures>
-	<structureMemeWeights>
-		  <ESCP_Structure_OriginDivinesEight MayRequire="Ludeon.RimWorld.Ideology">10</ESCP_Structure_OriginDivinesEight>
-	</structureMemeWeights>
-    <!-- Don't enable unless there are actually backstories -->
-		<!--
-		<backstoryFilters>
-		  <li>
-			<categories>
-			  <li>ESCP_Altmer_Tribal</li>
-			</categories>
-			<commonality>0.95</commonality>
-		  </li>
-		</backstoryFilters>
-		-->
-    <caravanTraderKinds>
-	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_WineMerchant</li>
-	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_ArtPatron</li>
-    </caravanTraderKinds>
-    <visitorTraderKinds>
-    </visitorTraderKinds>
-    <baseTraderKinds>
-    </baseTraderKinds>
-    <raidLootMaker>ESCP_AltmerTribeRaidLootMaker</raidLootMaker>
-    <pawnGroupMakers>
-      <li>
-        <!-- Normal fights, ranged with melee mix-ins -->
-        <kindDef>Combat</kindDef>
-        <commonality>100</commonality>
-        <options>
-          <ESCP_AltmerTribal_Penitent>5</ESCP_AltmerTribal_Penitent>
-          <ESCP_AltmerTribal_Warrior>5</ESCP_AltmerTribal_Warrior>
-          <ESCP_AltmerTribal_Archer>10</ESCP_AltmerTribal_Archer>
-          <ESCP_AltmerTribal_Hunter>10</ESCP_AltmerTribal_Hunter>
-          <ESCP_AltmerTribal_HeavyArcher>10</ESCP_AltmerTribal_HeavyArcher>
-          <ESCP_AltmerTribal_Berserker>5</ESCP_AltmerTribal_Berserker>
-          <ESCP_AltmerTribal_ChiefRanged>3</ESCP_AltmerTribal_ChiefRanged>
-          <ESCP_AltmerTribal_ChiefMelee>1.5</ESCP_AltmerTribal_ChiefMelee>
-	   </options>
-      </li>
-      <li>
-        <!-- Normal fights, ranged only -->
-        <kindDef>Combat</kindDef>
-        <commonality>60</commonality>
-        <options>
-          <ESCP_AltmerTribal_Archer>10</ESCP_AltmerTribal_Archer>
-          <ESCP_AltmerTribal_Hunter>10</ESCP_AltmerTribal_Hunter>
-          <ESCP_AltmerTribal_HeavyArcher>10</ESCP_AltmerTribal_HeavyArcher>
-          <ESCP_AltmerTribal_ChiefRanged>5</ESCP_AltmerTribal_ChiefRanged>
-        </options>
-      </li>
-	  <li MayRequire="SirMashedPotato.ESCP.Bosmer">
-        <!-- Normal fights, melee only with Bosmer mix-ins -->
-        <kindDef>Combat</kindDef>
-        <commonality>40</commonality>
-        <options>
-		  <ESCP_BosmerTribal_Archer>10</ESCP_BosmerTribal_Archer>
-          <ESCP_BosmerTribal_Hunter>10</ESCP_BosmerTribal_Hunter>
-          <ESCP_BosmerTribal_HeavyArcher>10</ESCP_BosmerTribal_HeavyArcher>
-		  <ESCP_AltmerTribal_Penitent>10</ESCP_AltmerTribal_Penitent>
-          <ESCP_AltmerTribal_Warrior>10</ESCP_AltmerTribal_Warrior>
-          <ESCP_AltmerTribal_Berserker>10</ESCP_AltmerTribal_Berserker>
-          <ESCP_AltmerTribal_ChiefMelee>5</ESCP_AltmerTribal_ChiefMelee>
-        </options>
-      </li>
-	  <li MayRequire="SirMashedPotato.ESCP.Orsimer">
-        <!-- Normal fights, ranged only with Orsimer mix-ins -->
-        <kindDef>Combat</kindDef>
-        <commonality>40</commonality>
-        <options>
-		  <ESCP_OrsimerTribal_Penitent>10</ESCP_OrsimerTribal_Penitent>
-		  <ESCP_OrsimerTribal_Warrior>10</ESCP_OrsimerTribal_Warrior>
-		  <ESCP_OrsimerTribal_Berserker>10</ESCP_OrsimerTribal_Berserker>
-		  <ESCP_OrsimerTribal_Elite>10</ESCP_OrsimerTribal_Elite>
-          <ESCP_AltmerTribal_Archer>10</ESCP_AltmerTribal_Archer>
-          <ESCP_AltmerTribal_Hunter>10</ESCP_AltmerTribal_Hunter>
-          <ESCP_AltmerTribal_HeavyArcher>10</ESCP_AltmerTribal_HeavyArcher>
-          <ESCP_AltmerTribal_ChiefRanged>5</ESCP_AltmerTribal_ChiefRanged>
-        </options>
-      </li>
-	  <li MayRequire="SirMashedPotato.ESCP.Goblin">
-        <!-- Normal fights, ranged only with Goblin mix-ins 
-			Don actually do nuthin right now
-		-->
-        <kindDef>Combat</kindDef>
-        <commonality>40</commonality>
-        <options>
-		  <ESCP_GoblinTribal_Penitent>10</ESCP_GoblinTribal_Penitent>
-		  <ESCP_GoblinTribal_Warrior>10</ESCP_GoblinTribal_Warrior>
-		  <ESCP_GoblinTribal_Berserker>10</ESCP_GoblinTribal_Berserker>
-		  <ESCP_GoblinTribal_Elite>10</ESCP_GoblinTribal_Elite>
-          <ESCP_AltmerTribal_Archer>10</ESCP_AltmerTribal_Archer>
-          <ESCP_AltmerTribal_Hunter>10</ESCP_AltmerTribal_Hunter>
-          <ESCP_AltmerTribal_HeavyArcher>10</ESCP_AltmerTribal_HeavyArcher>
-          <ESCP_AltmerTribal_ChiefRanged>5</ESCP_AltmerTribal_ChiefRanged>
-        </options>
-      </li>
-      <li>
-        <!-- Normal fights, melee only -->
-        <kindDef>Combat</kindDef>
-        <commonality>30</commonality>
-        <options>
-          <ESCP_AltmerTribal_Penitent>10</ESCP_AltmerTribal_Penitent>
-          <ESCP_AltmerTribal_Warrior>10</ESCP_AltmerTribal_Warrior>
-          <ESCP_AltmerTribal_Berserker>10</ESCP_AltmerTribal_Berserker>
-          <ESCP_AltmerTribal_ChiefMelee>5</ESCP_AltmerTribal_ChiefMelee>
-      </options>
-      </li>
-      <li>
-        <!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
-        <kindDef>Combat</kindDef>
-        <commonality>5</commonality>
-        <options>
-          <ESCP_OrsimerTribal_Breacher MayRequire="SirMashedPotato.ESCP.Orsimer">5</ESCP_OrsimerTribal_Breacher>
-          <ESCP_AltmerTribal_Breacher>5</ESCP_AltmerTribal_Breacher>
-          <ESCP_AltmerTribal_Penitent>5</ESCP_AltmerTribal_Penitent>
-          <ESCP_AltmerTribal_Warrior>5</ESCP_AltmerTribal_Warrior>
-          <ESCP_AltmerTribal_Archer>10</ESCP_AltmerTribal_Archer>
-          <ESCP_AltmerTribal_Hunter>10</ESCP_AltmerTribal_Hunter>
-          <ESCP_BosmerTribal_HeavyArcher MayRequire="SirMashedPotato.ESCP.Bosmer">10</ESCP_BosmerTribal_HeavyArcher>
-          <ESCP_AltmerTribal_HeavyArcher>10</ESCP_AltmerTribal_HeavyArcher>
-          <ESCP_AltmerTribal_Berserker>5</ESCP_AltmerTribal_Berserker>
-          <ESCP_AltmerTribal_ChiefRanged>3</ESCP_AltmerTribal_ChiefRanged>
-          <ESCP_AltmerTribal_ChiefMelee>1.5</ESCP_AltmerTribal_ChiefMelee>
-      </options>
-      </li>
-      <li>
-        <!-- Peaceful -->
-        <kindDef>Peaceful</kindDef>
-        <options>
-          <ESCP_AltmerTribal_Warrior>20</ESCP_AltmerTribal_Warrior>
-          <ESCP_AltmerTribal_Archer>10</ESCP_AltmerTribal_Archer>
-          <ESCP_AltmerTribal_Hunter>10</ESCP_AltmerTribal_Hunter>
-          <ESCP_AltmerTribal_HeavyArcher>10</ESCP_AltmerTribal_HeavyArcher>
-          <ESCP_AltmerTribal_Berserker>5</ESCP_AltmerTribal_Berserker>
-          <ESCP_AltmerTribal_ChiefRanged>3</ESCP_AltmerTribal_ChiefRanged>
-          <ESCP_AltmerTribal_ChiefMelee>1.5</ESCP_AltmerTribal_ChiefMelee>
-        </options>
-      </li>
-      <li>
-        <kindDef>Trader</kindDef>
-        <traders>
-          <ESCP_AltmerTribal_Trader>1</ESCP_AltmerTribal_Trader>
-        </traders>
-        <carriers>
-          <Muffalo>6</Muffalo>
-          <Dromedary>5</Dromedary>
-          <Alpaca>2.5</Alpaca>
-          <Elephant>2</Elephant>
-        </carriers>
-        <guards>
-          <ESCP_AltmerTribal_Warrior>7</ESCP_AltmerTribal_Warrior>
-          <ESCP_AltmerTribal_Archer>10</ESCP_AltmerTribal_Archer>
-          <ESCP_AltmerTribal_Hunter>10</ESCP_AltmerTribal_Hunter>
-          <ESCP_AltmerTribal_HeavyArcher>10</ESCP_AltmerTribal_HeavyArcher>
-          <ESCP_AltmerTribal_Berserker>7</ESCP_AltmerTribal_Berserker>
-        </guards>
-      </li>
-      <li>
-        <kindDef>Settlement</kindDef>
-        <options>
-          <ESCP_AltmerTribal_Warrior>7</ESCP_AltmerTribal_Warrior>
-          <ESCP_AltmerTribal_Archer>10</ESCP_AltmerTribal_Archer>
-          <ESCP_AltmerTribal_Hunter>10</ESCP_AltmerTribal_Hunter>
-          <ESCP_AltmerTribal_HeavyArcher>10</ESCP_AltmerTribal_HeavyArcher>
-          <ESCP_AltmerTribal_Berserker>7</ESCP_AltmerTribal_Berserker>
-          <ESCP_AltmerTribal_ChiefRanged>10</ESCP_AltmerTribal_ChiefRanged>
-		  <ESCP_OrsimerTribal_Berserker MayRequire="SirMashedPotato.ESCP.Orsimer">5</ESCP_OrsimerTribal_Berserker>
-		  <ESCP_OrsimerTribal_Elite MayRequire="SirMashedPotato.ESCP.Orsimer">5</ESCP_OrsimerTribal_Elite>
-		  <ESCP_BosmerTribal_HeavyArcher MayRequire="SirMashedPotato.ESCP.Bosmer">5</ESCP_BosmerTribal_HeavyArcher>
-        </options>
-      </li>
-      <li>
-        <kindDef>Settlement_RangedOnly</kindDef>
-        <options>
-          <ESCP_AltmerTribal_Archer>10</ESCP_AltmerTribal_Archer>
-          <ESCP_AltmerTribal_Hunter>10</ESCP_AltmerTribal_Hunter>
-          <ESCP_AltmerTribal_HeavyArcher>10</ESCP_AltmerTribal_HeavyArcher>
-          <ESCP_AltmerTribal_ChiefRanged>10</ESCP_AltmerTribal_ChiefRanged>
-		  <ESCP_BosmerTribal_HeavyArcher MayRequire="SirMashedPotato.ESCP.Bosmer">10</ESCP_BosmerTribal_HeavyArcher>
-        </options>
-      </li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">
-        <kindDef>Miners</kindDef>
-        <commonality>1</commonality>
-        <options>
-          <ESCP_AltmerTribal_Miner>1</ESCP_AltmerTribal_Miner>
-        </options>
-      </li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">
-        <kindDef>Hunters</kindDef>
-        <commonality>1</commonality>
-        <options>
-          <ESCP_AltmerTribal_Hunter>1</ESCP_AltmerTribal_Hunter>
-        </options>
-      </li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">
-        <kindDef>Farmers</kindDef>
-        <commonality>1</commonality>
-        <options>
-          <ESCP_AltmerTribal_Farmer>1</ESCP_AltmerTribal_Farmer>
-        </options>
-      </li>
-    </pawnGroupMakers>
-    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
-  </FactionDef>
-
-  <ThingSetMakerDef>
-    <defName>ESCP_AltmerTribeRaidLootMaker</defName>
-    <root Class="ThingSetMaker_MarketValue">
-      <fixedParams>
-        <filter>
-          <thingDefs>
-            <li>Silver</li>
-            <li>Jade</li>
-            <li>MedicineHerbal</li>
-            <li>Pemmican</li>
-          </thingDefs>
-        </filter>
-      </fixedParams>
-    </root>
-  </ThingSetMakerDef>
-  
-  <FactionDef ParentName="ESCP_AltmerTribeBase">
-    <defName>ESCP_AltmerTribeCivil</defName>
-    <label>Altmer colonies</label>
-	<description>A collection of Altmer colonies. Altmer prefer to be left to their own devices, but also enjoy forcefully spreading these devices to others. Gaining an alliance with the Altmer colonies may prove reasonably difficult, keeping it will prove even more challenging.\n\nAltmer are well aware of their weaknesses in combat. They often raise Goblin slave armies, or conscript Bosmer archers and Orsimer beserkers, for use in combat. This may prove useful to anyone who manages to forge an allaince with the Altmer.\n\nThese particular colonies pursues a gentle way of life where they can. They are quite open to trade and alliances, even with strange peoples.</description>
-	<colorSpectrum>
-      <li>(0.3, 0.6, 0.7)</li>
-      <li>(0.6, 0.3, 0.7)</li>
-	  <li>(0.6, 0.6, 0.8)</li>
-    </colorSpectrum>
-	<requiredMemes>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
-	</requiredMemes>
-    <disallowedMemes>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
-    </disallowedMemes>
-    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
-    <configurationListOrderPriority>40</configurationListOrderPriority>
-  </FactionDef>
-
-  <FactionDef ParentName="ESCP_AltmerTribeBase">
-    <defName>ESCP_AltmerTribeRough</defName>
-    <label>separatist Altmer colonies</label>
-	<description>A collection of Altmer colonies. Altmer prefer to be left to their own devices, but also enjoy forcefully spreading these devices to others. Gaining an alliance with the Altmer colonies may prove reasonably difficult, keeping it will prove even more challenging.\n\nAltmer are well aware of their weaknesses in combat. They often raise Goblin slave armies, or conscript Bosmer archers and Orsimer beserkers, for use in combat. This may prove useful to anyone who manages to forge an allaince with the Altmer.\n\nThese particular colonies are ruled by a separatist movement; it may be difficult to turn them into an ally.</description>	
-	<colorSpectrum>
-      <li>(0.5, 0.8, 0.3)</li>
-      <li>(0.8, 0.3, 0.5)</li>
-	  <li>(1.0, 0.8, 0.4)</li>
-    </colorSpectrum>
-    <factionIconPath>World/WorldObjects/Expanding/ESCP_AltmerSettlementAlt</factionIconPath>
-    <naturalEnemy>true</naturalEnemy>
-	<requiredMemes>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
-	</requiredMemes>
-    <disallowedMemes>
-      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
-    </disallowedMemes>
-    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
-    <configurationListOrderPriority>50</configurationListOrderPriority>
-  </FactionDef>
-  
-  <FactionDef ParentName="ESCP_AltmerTribeBase">
-    <defName>ESCP_AltmerDominion</defName>
-    <label>Altmer dominion</label>
-	<description>A collection of Altmer colonies. Altmer prefer to be left to their own devices, but also enjoy forcefully spreading these devices to others. Gaining an alliance with the Altmer colonies may prove reasonably difficult, keeping it will prove even more challenging.\n\nAltmer are well aware of their weaknesses in combat. They often raise Goblin slave armies, or conscript Bosmer archers and Orsimer beserkers, for use in combat. This may prove useful to anyone who manages to forge an allaince with the Altmer.\n\nThese particular colonies are part of an Aldmeri Dominion; they are only willing to ally with other Altmer factions.</description>	
-	<colorSpectrum>
-      <li>(1.0, 1.0, 0.0)</li>
-      <li>(0.8, 0.6, 0.0)</li>
-	  <li>(0.7, 0.7, 0.2)</li>
-    </colorSpectrum>
-    <factionIconPath>World/WorldObjects/Expanding/ESCP_AltmerDominion</factionIconPath>
-	<factionNameMaker>ESCP_NamerFactionAltmerDominion</factionNameMaker>
-    <naturalEnemy>true</naturalEnemy>
-	<requiredMemes>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
-	</requiredMemes>
-    <disallowedMemes>
-      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
-    </disallowedMemes>
-    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
-    <configurationListOrderPriority>50</configurationListOrderPriority>
-  </FactionDef>
-
-  <FactionDef ParentName="ESCP_AltmerTribeBase">
-    <defName>ESCP_AltmerTribeSavage</defName>
-    <label>Altmer deserters</label>
-	<description>A collection of Altmer colonies. Altmer prefer to be left to their own devices, but also enjoy forcefully spreading these devices to others. Gaining an alliance with the Altmer colonies may prove reasonably difficult, keeping it will prove even more challenging.\n\nAltmer are well aware of their weaknesses in combat. They often raise Goblin slave armies, or conscript Bosmer archers and Orsimer beserkers, for use in combat. This may prove useful to anyone who manages to forge an allaince with the Altmer.\n\nThese particular colonies are controlled by deserters, who are driven by a blood-and-honor culture; you will not be able to ally with them!</description>
-	<colorSpectrum>
-      <li>(0.85, 0, 0)</li>
-      <li>(0.85, 0.7, 0.7)</li>
-    </colorSpectrum>
-    <factionIconPath>World/WorldObjects/Expanding/ESCP_AltmerRaider</factionIconPath>
-    <permanentEnemy>true</permanentEnemy>
-	<factionNameMaker>ESCP_NamerFactionAltmerRaider</factionNameMaker>
-    <requiredMemes>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
-    </requiredMemes>
-    <disallowedMemes>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
-    </disallowedMemes>
-    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
-    <configurationListOrderPriority>60</configurationListOrderPriority>
-  </FactionDef>
-
+	<!-- ==========[ESCP_AltmerNonPlayerFaction_Base]========== -->
+	<FactionDef ParentName="ESCP_NonPlayerFactionBase_Tribal" Name="ESCP_AltmerNonPlayerFaction_Base" Abstract="True">
+		<modExtensions>
+			<li Class="ESCP_RaceTools.SettlementPreference">
+				<chance>1.0</chance>
+				<useTemperatureRange>true</useTemperatureRange>
+				<temperatureRangeMin>-10</temperatureRangeMin>
+				<temperatureRangeMax>35</temperatureRangeMax>
+				<useSwampinessRange>true</useSwampinessRange>
+				<swampinessRangeMin>0.0</swampinessRangeMin>
+				<swampinessRangeMax>0.5</swampinessRangeMax>
+				<useRainfallRange>true</useRainfallRange>
+				<rainfallRangeMin>500</rainfallRangeMin>
+				<rainfallRangeMax>1500</rainfallRangeMax>
+				<dislikedBiomeList>
+					<li>MorrowRim_Ashlands</li>
+					<li>MorrowRim_BlightedAshlands</li>
+					<li>MorrowRim_VolcanicAshlands</li>
+					<li>MorrowRim_AshSwamp</li>
+					<li>Rainforest</li>
+				</dislikedBiomeList>
+				<IgnoreBiomeSelectionWeight>false</IgnoreBiomeSelectionWeight>
+			</li>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_AltmerFaction</li>
+					<li>ESCP_AltmerFactionNonPlayer</li>
+				</factionTags>
+			</li>
+		</modExtensions>
+		<leaderTitle>King</leaderTitle>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_AltmerSettlement</factionIconPath>
+		<factionNameMaker>ESCP_Altmer_NamerFaction</factionNameMaker>
+		<settlementNameMaker>ESCP_Altmer_NamerSettlement</settlementNameMaker>
+		<allowedCultures>
+			<li>ESCP_AltmerCulture</li>
+		</allowedCultures>
+		<structureMemeWeights>
+			<ESCP_Structure_OriginDivinesEight MayRequire="Ludeon.RimWorld.Ideology">20</ESCP_Structure_OriginDivinesEight>
+		</structureMemeWeights>
+		<requiredMemes/>
+		<caravanTraderKinds>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_WineMerchant</li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_ArtPatron</li>
+		</caravanTraderKinds>
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<ESCP_Altmer_Tribal_Penitent>5</ESCP_Altmer_Tribal_Penitent>
+					<ESCP_Altmer_Tribal_Warrior>5</ESCP_Altmer_Tribal_Warrior>
+					<ESCP_Altmer_Tribal_Archer>10</ESCP_Altmer_Tribal_Archer>
+					<ESCP_Altmer_Tribal_Hunter>10</ESCP_Altmer_Tribal_Hunter>
+					<ESCP_Altmer_Tribal_HeavyArcher>10</ESCP_Altmer_Tribal_HeavyArcher>
+					<ESCP_Altmer_Tribal_Berserker>5</ESCP_Altmer_Tribal_Berserker>
+					<ESCP_Altmer_Tribal_ChiefRanged>3</ESCP_Altmer_Tribal_ChiefRanged>
+					<ESCP_Altmer_Tribal_ChiefMelee>1.5</ESCP_Altmer_Tribal_ChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, ranged only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<ESCP_Altmer_Tribal_Archer>10</ESCP_Altmer_Tribal_Archer>
+					<ESCP_Altmer_Tribal_Hunter>10</ESCP_Altmer_Tribal_Hunter>
+					<ESCP_Altmer_Tribal_HeavyArcher>10</ESCP_Altmer_Tribal_HeavyArcher>
+					<ESCP_Altmer_Tribal_ChiefRanged>5</ESCP_Altmer_Tribal_ChiefRanged>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, melee only -->
+				<kindDef>Combat</kindDef>
+				<commonality>30</commonality>
+				<options>
+					<ESCP_Altmer_Tribal_Penitent>10</ESCP_Altmer_Tribal_Penitent>
+					<ESCP_Altmer_Tribal_Warrior>10</ESCP_Altmer_Tribal_Warrior>
+					<ESCP_Altmer_Tribal_Berserker>10</ESCP_Altmer_Tribal_Berserker>
+					<ESCP_Altmer_Tribal_ChiefMelee>5</ESCP_Altmer_Tribal_ChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>5</commonality>
+				<options>
+					<ESCP_Altmer_Tribal_Breacher>5</ESCP_Altmer_Tribal_Breacher>
+					<ESCP_Altmer_Tribal_Penitent>5</ESCP_Altmer_Tribal_Penitent>
+					<ESCP_Altmer_Tribal_Warrior>5</ESCP_Altmer_Tribal_Warrior>
+					<ESCP_Altmer_Tribal_Archer>10</ESCP_Altmer_Tribal_Archer>
+					<ESCP_Altmer_Tribal_Hunter>10</ESCP_Altmer_Tribal_Hunter>
+					<ESCP_Altmer_Tribal_HeavyArcher>10</ESCP_Altmer_Tribal_HeavyArcher>
+					<ESCP_Altmer_Tribal_Berserker>5</ESCP_Altmer_Tribal_Berserker>
+					<ESCP_Altmer_Tribal_ChiefRanged>3</ESCP_Altmer_Tribal_ChiefRanged>
+					<ESCP_Altmer_Tribal_ChiefMelee>1.5</ESCP_Altmer_Tribal_ChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- Peaceful -->
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<ESCP_Altmer_Tribal_Warrior>20</ESCP_Altmer_Tribal_Warrior>
+					<ESCP_Altmer_Tribal_Archer>10</ESCP_Altmer_Tribal_Archer>
+					<ESCP_Altmer_Tribal_Hunter>10</ESCP_Altmer_Tribal_Hunter>
+					<ESCP_Altmer_Tribal_HeavyArcher>10</ESCP_Altmer_Tribal_HeavyArcher>
+					<ESCP_Altmer_Tribal_Berserker>5</ESCP_Altmer_Tribal_Berserker>
+					<ESCP_Altmer_Tribal_ChiefRanged>3</ESCP_Altmer_Tribal_ChiefRanged>
+					<ESCP_Altmer_Tribal_ChiefMelee>1.5</ESCP_Altmer_Tribal_ChiefMelee>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<ESCP_Altmer_Tribal_Trader>1</ESCP_Altmer_Tribal_Trader>
+				</traders>
+				<carriers>
+					<MorrowRim_Guar MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheAnimals">10</MorrowRim_Guar>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2.5</Alpaca>
+					<Elephant>2</Elephant>
+				</carriers>
+				<guards>
+					<ESCP_Altmer_Tribal_Warrior>7</ESCP_Altmer_Tribal_Warrior>
+					<ESCP_Altmer_Tribal_Archer>10</ESCP_Altmer_Tribal_Archer>
+					<ESCP_Altmer_Tribal_Hunter>10</ESCP_Altmer_Tribal_Hunter>
+					<ESCP_Altmer_Tribal_HeavyArcher>10</ESCP_Altmer_Tribal_HeavyArcher>
+					<ESCP_Altmer_Tribal_Berserker>7</ESCP_Altmer_Tribal_Berserker>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<ESCP_Altmer_Tribal_Warrior>7</ESCP_Altmer_Tribal_Warrior>
+					<ESCP_Altmer_Tribal_Archer>10</ESCP_Altmer_Tribal_Archer>
+					<ESCP_Altmer_Tribal_Hunter>10</ESCP_Altmer_Tribal_Hunter>
+					<ESCP_Altmer_Tribal_HeavyArcher>10</ESCP_Altmer_Tribal_HeavyArcher>
+					<ESCP_Altmer_Tribal_Berserker>7</ESCP_Altmer_Tribal_Berserker>
+					<ESCP_Altmer_Tribal_ChiefRanged>10</ESCP_Altmer_Tribal_ChiefRanged>
+				</options>
+			</li>
+			<li>
+				<kindDef>Settlement_RangedOnly</kindDef>
+				<options>
+					<ESCP_Altmer_Tribal_Archer>10</ESCP_Altmer_Tribal_Archer>
+					<ESCP_Altmer_Tribal_Hunter>10</ESCP_Altmer_Tribal_Hunter>
+					<ESCP_Altmer_Tribal_HeavyArcher>10</ESCP_Altmer_Tribal_HeavyArcher>
+					<ESCP_Altmer_Tribal_ChiefRanged>10</ESCP_Altmer_Tribal_ChiefRanged>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<ESCP_Altmer_Tribal_Miner>1</ESCP_Altmer_Tribal_Miner>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<ESCP_Altmer_Tribal_Hunter>1</ESCP_Altmer_Tribal_Hunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<ESCP_Altmer_Tribal_Farmer>1</ESCP_Altmer_Tribal_Farmer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	<!-- ==========[ESCP_AltmerNonPlayerFaction_Kingdom]========== -->
+	<FactionDef ParentName="ESCP_AltmerNonPlayerFaction_Base">
+		<defName>ESCP_AltmerNonPlayerFaction_Kingdom</defName>
+		<label>Altmer kingdom</label>
+		<description>A collection of Altmer cities and colonies, ruled over by a collective of scholars and mages. Altmer prefer to be left to their own devices, but also enjoy forcefully spreading these devices to others. Gaining an alliance with an Altmer faction may prove reasonably difficult, keeping it will prove even more challenging.\n\nThis particular faction are more focused on perfecting the high arts, than going to war with their neighbours. They are quite open to trade and alliances, even with strange peoples.</description>
+		<colorSpectrum>
+			<li>(0.3, 0.6, 0.7)</li>
+			<li>(0.6, 0.3, 0.7)</li>
+			<li>(0.6, 0.6, 0.8)</li>
+		</colorSpectrum>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+			<li MayRequire="VanillaExpanded.VMemesE">AM_Artist</li>
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+		</disallowedMemes>
+		<configurationListOrderPriority>30</configurationListOrderPriority>
+	</FactionDef>
+	<!-- ==========[ESCP_AltmerNonPlayerFaction_Dominion]========== -->
+	<FactionDef ParentName="ESCP_AltmerNonPlayerFaction_Base">
+		<defName>ESCP_AltmerNonPlayerFaction_Dominion</defName>
+		<label>Altmer dominion</label>
+		<description>A collection of Altmer cities and colonies, ruled over by a single person. Altmer prefer to be left to their own devices, but also enjoy forcefully spreading these devices to others. Gaining an alliance with an Altmer faction may prove reasonably difficult, keeping it will prove even more challenging.\n\nThese particular colonies are part of an Aldmeri Dominion; they are only willing to ally with other Altmer factions.</description>
+		<colorSpectrum>
+			<li>(1.0, 1.0, 0.0)</li>
+			<li>(0.8, 0.6, 0.0)</li>
+			<li>(0.7, 0.7, 0.2)</li>
+		</colorSpectrum>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_AltmerDominion</factionIconPath>
+		<factionNameMaker>ESCP_Altmer_NamerFactionDominion</factionNameMaker>
+		<naturalEnemy>true</naturalEnemy>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+		</disallowedMemes>
+		<configurationListOrderPriority>40</configurationListOrderPriority>
+	</FactionDef>
+	<!-- ==========[ESCP_AltmerNonPlayerFaction_Deserters]========== -->
+	<FactionDef ParentName="ESCP_AltmerNonPlayerFaction_Base">
+		<defName>ESCP_AltmerNonPlayerFaction_Deserters</defName>
+		<label>Altmer deserters</label>
+		<description>A collection of Altmer cities and colonies, ruled over by a self appointed 'king'. They left their old lives for a reason; you will not be able to ally with them!</description>
+		<colorSpectrum>
+			<li>(0.85, 0, 0)</li>
+			<li>(0.85, 0.7, 0.7)</li>
+		</colorSpectrum>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_AltmerRaider</factionIconPath>
+		<permanentEnemy>true</permanentEnemy>
+		<factionNameMaker>ESCP_Altmer_NamerFactionRaider</factionNameMaker>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<configurationListOrderPriority>50</configurationListOrderPriority>
+	</FactionDef>
 </Defs>
