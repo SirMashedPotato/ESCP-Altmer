@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RitualVisualEffectDef ParentName="RitualGlowAbstract">
+		<defName>ESCP_Altmeri</defName>
+		<tintColor>(209, 179, 93)</tintColor>
+		<comps>
+			<li>
+				<compClass>CompRitualEffect_ConstantCenter</compClass>
+				<moteDef>Mote_RitualSmokeThick</moteDef>
+				<scaleWithRoom>true</scaleWithRoom>
+			</li>
+		</comps>
+	</RitualVisualEffectDef>
+</Defs>
