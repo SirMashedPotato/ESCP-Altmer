@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[ESCP_AchievementReward_PawnJoins_Maormer]========== -->
+	<AchievementsExpanded.Reward_MapIncident ParentName="ESCP_AchievementReward_PawnJoins_Base">
+		<defName>ESCP_AchievementReward_PawnJoins_Maormer</defName>
+		<label>Maormer subject joins</label>
+		<incident>ESCP_AchievementReward_PawnJoinsIncident_Maormer</incident>
+	</AchievementsExpanded.Reward_MapIncident>
+	<!-- ==========[ESCP_AchievementReward_PawnJoins_MaormerLeviathan]========== -->
+	<AchievementsExpanded.Reward_MapIncident ParentName="ESCP_AchievementReward_PawnJoins_Base">
+		<defName>ESCP_AchievementReward_PawnJoins_MaormerLeviathan</defName>
+		<label>Maormer Leviathan joins</label>
+		<incident>ESCP_AchievementReward_PawnJoinsIncident_MaormerLeviathan</incident>
+		<cost>200</cost>
+	</AchievementsExpanded.Reward_MapIncident>
+</Defs>

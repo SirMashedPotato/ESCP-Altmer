@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_GeneInheritedBonus_Maormer]========== -->
+	<GeneDef ParentName="ESCP_InheritedRacialBonus_Base">
+		<defName>ESCP_GeneInheritedBonus_Maormer</defName>
+		<label>Maormer blood</label>
+		<description>Carriers of this gene exhibit some of the bonuses typically displayed by the Maormer race, though at a comparatively weaker level.</description>
+		<iconPath>UI/Icons/Genes/ESCP_InheritedBonus/ESCP_GeneInheritedBonus_Maormer</iconPath>
+		<statOffsets>
+			<ComfyTemperatureMax>2</ComfyTemperatureMax>
+			<ToxicResistance>0.1</ToxicResistance>
+			<ImmunityGainSpeed>0.1</ImmunityGainSpeed>
+			<InjuryHealingFactor>0.05</InjuryHealingFactor>
+			<SocialImpact>-0.1</SocialImpact>
+			<SwimSpeed MayRequireAnyOf="pyrce.swimming.modkit,BiomesTeam.BiomesIslands">1</SwimSpeed>
+		</statOffsets>
+		<displayOrderInCategory>8</displayOrderInCategory>
+	</GeneDef>
+	<!-- ==========[ESCP_GeneInheritedBonus_MaormerLeviathan]========== -->
+	<!-- TODO -->
+	<GeneDef ParentName="ESCP_InheritedRacialBonus_Base">
+		<defName>ESCP_GeneInheritedBonus_MaormerLeviathan</defName>
+		<label>Leviathan blood</label>
+		<description>Carriers of this gene exhibit some of the bonuses typically displayed by Maormer Leviathans, though at a comparatively weaker level.</description>
+		<iconPath>UI/Icons/Genes/ESCP_InheritedBonus/ESCP_GeneInheritedBonus_MaormerLeviathan</iconPath>
+		<statOffsets>
+			<EatingSpeed>0.25</EatingSpeed>
+			<MoveSpeed>-0.5</MoveSpeed>
+			<ComfyTemperatureMax>2</ComfyTemperatureMax>
+			<ToxicResistance>0.25</ToxicResistance>
+			<ImmunityGainSpeed>0.1</ImmunityGainSpeed>
+			<InjuryHealingFactor>0.1</InjuryHealingFactor>
+			<SocialImpact>-0.2</SocialImpact>
+			<MentalBreakThreshold>0.07</MentalBreakThreshold>
+			<Flammability>0.1</Flammability>
+			<SwimSpeed MayRequireAnyOf="pyrce.swimming.modkit,BiomesTeam.BiomesIslands">2</SwimSpeed>
+		</statOffsets>
+		<biostatMet>-2</biostatMet>
+		<displayOrderInCategory>9</displayOrderInCategory>
+	</GeneDef>
+</Defs>

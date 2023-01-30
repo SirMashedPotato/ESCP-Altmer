@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[ESCP_AchievementMaormer_MaormerColonists]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
+		<defName>ESCP_AchievementMaormer_MaormerColonists</defName>
+		<label>No Altmer Allowed</label>
+		<description>Have 12 Maormer in your colony at the same time</description>
+		<tracker Class="AchievementsExpanded.RaceDefTracker">
+			<raceDefs>
+				<li>
+					<key>ESCP_MaormerRace</key>
+					<value>12</value>
+				</li>
+			</raceDefs>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementMaormer_MaormerColonists</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[ESCP_AchievementMaormer_MaormerLeviathan]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
+		<defName>ESCP_AchievementMaormer_MaormerLeviathan</defName>
+		<label>A Maormer and a Serpent Walk Into a Bar</label>
+		<description>Have a Maormer Leviathan in your colony</description>
+		<tracker Class="AchievementsExpanded.RaceDefTracker">
+			<raceDefs>
+				<li>
+					<key>ESCP_MaormerLeviathanRace</key>
+					<value>1</value>
+				</li>
+			</raceDefs>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementMaormer_MaormerLeviathan</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[ESCP_AchievementMaormer_ReefViperTamer]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
+		<defName>ESCP_AchievementMaormer_ReefViperTamer</defName>
+		<label>Cold Blooded Monsters</label>
+		<description>Have 6 tame reef vipers at the same time</description>
+		<tracker Class="AchievementsExpanded.RaceDefTracker">
+			<raceDefs>
+				<li>
+					<key>ESCP_ReefViper</key>
+					<value>6</value>
+				</li>
+			</raceDefs>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementMaormer_ReefViperTamer</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[ESCP_AchievementMaormer_MaormerColonists]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
+		<defName>ESCP_AchievementMaormer_MaormerSlayer</defName>
+		<label>Feeding the Fish</label>
+		<description>Slay 50 Maormer</description>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<raceDef>ESCP_MaormerRace</raceDef>
+			<count>50</count>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementMaormer_MaormerSlayer</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[ESCP_AchievementMaormer_ReefViperSlayer]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
+		<defName>ESCP_AchievementMaormer_ReefViperSlayer</defName>
+		<label>Feeding the Fish Again</label>
+		<description>Slay 50 reef vipers</description>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<raceDef>ESCP_MaormerRace</raceDef>
+			<count>50</count>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementMaormer_ReefViperSlayer</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+</Defs>
