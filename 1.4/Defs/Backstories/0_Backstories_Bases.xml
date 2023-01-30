@@ -30,35 +30,4 @@
 			<li>ESCP_AltmerBackstory_AdulthoodMage</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
-	
-	<!-- ==========[ESCP_AltmerLeviathan_ChildhoodBase]========== -->
-	<AlienRace.AlienBackstoryDef Name="ESCP_AltmerLeviathan_ChildhoodBase" Abstract="True" >
-		<slot>Childhood</slot>
-		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
-		<spawnCategories>
-			<li>ESCP_AltmerLeviathanBackstory_Childhood</li>
-		</spawnCategories>
-		<forcedTraitsChance>
-			<li>
-				<defName>Psychopath</defName>
-				<chance>100</chance>
-			</li>
-		</forcedTraitsChance>
-		<workDisables>
-			<li>Caring</li>
-		</workDisables>
-		<maleCommonality>100</maleCommonality>
-		<femaleCommonality>100</femaleCommonality>
-	</AlienRace.AlienBackstoryDef>
-	<!-- ==========[ESCP_AltmerLeviathan_AdulthoodBase]========== -->
-	<AlienRace.AlienBackstoryDef Name="ESCP_AltmerLeviathan_AdulthoodBase" Abstract="True" >
-		<slot>Adulthood</slot>
-		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
-		<spawnCategories>
-			<li>ESCP_AltmerLeviathanBackstory_Adulthood</li>
-		</spawnCategories>
-		<workDisables>
-			<li>Caring</li>
-		</workDisables>
-	</AlienRace.AlienBackstoryDef>
 </Defs>
