@@ -18,41 +18,49 @@
 					<li>
 						<name>Auri-El</name>
 						<type>King of the Aldmer</type>
+						<gender>Male</gender>
 						<iconPath>UI/Deities/ESCP_DeityAuriEl</iconPath>
 					</li>
 					<li>
 						<name>Magnus</name>
 						<type>the God of Sorcery</type>
+						<gender>Male</gender>
 						<iconPath>UI/Deities/ESCP_DeityMagnus</iconPath>
 					</li>
 					<li>
 						<name>Trinimac</name>
 						<type>the Golden Champion</type>
+						<gender>Male</gender>
 						<iconPath>UI/Deities/ESCP_DeityTrinimac</iconPath>
 					</li>
 					<li>
 						<name>Y'ffre</name>
 						<type>the God of the Forest</type>
+						<gender>Male</gender>
 						<iconPath>UI/Deities/ESCP_DeityYffre</iconPath>
 					</li>
 					<li>
 						<name>Xarxes</name>
 						<type>the God of Ancestry</type>
+						<gender>Male</gender>
 						<iconPath>UI/Deities/ESCP_DeityXarxes</iconPath>
 					</li>
 					<li>
 						<name>Mara</name>
 						<type>the Godess of Love</type>
+						<gender>Female</gender>
 						<iconPath>UI/Deities/ESCP_DeityMara</iconPath>
 					</li>
 					<li>
 						<name>Stendarr</name>
 						<type>the God of Mercy</type>
+						<gender>Male</gender>
 						<iconPath>UI/Deities/ESCP_DeityStendarr</iconPath>
 					</li>
 					<li>
 						<name>Syrabane</name>
 						<type>the Warlock's God</type>
+						<gender>Male</gender>
 						<iconPath>UI/Deities/ESCP_DeitySyrabane</iconPath>
 					</li>
 				</divinesList>
