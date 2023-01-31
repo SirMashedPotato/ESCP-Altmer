@@ -17,6 +17,8 @@
 			<li>
 				<categoriesChildhood>
 					<li>ESCP_AltmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+					<li>ESCP_GenericBackstory_ChildhoodHighClass</li>
 				</categoriesChildhood>
 				<categoriesAdulthood>
 					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
