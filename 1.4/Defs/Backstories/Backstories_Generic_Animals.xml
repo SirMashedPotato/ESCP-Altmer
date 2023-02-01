@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_AltmerBackstory_Adulthood_AnimalsA]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_Altmer_AdulthoodBase">
+		<defName>ESCP_AltmerBackstory_Adulthood_AnimalsA</defName>
+		<title>canah breeder</title>
+		<titleShort>breeder</titleShort>
+		<baseDesc>While most Altmer skilled with animals set their eyes on taming a gryphon, [PAWN_nameDef] decided to go for something a little smaller, and far less dangerous. [PAWN_pronoun] quickly became rather skilled at breeding canah, a colourful bird native to the Summerset Isles. [PAWN_nameDef] made quite a decent amount of coin breeding canah for nobles, who all seemed to want an aviary full of them.</baseDesc>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<li>
+				<key>Animals</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_AltmerBackstory_Adulthood_AnimalsB]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_Altmer_AdulthoodBase">
+		<defName>ESCP_AltmerBackstory_Adulthood_AnimalsB</defName>
+		<title>gryphon handler</title>
+		<titleShort>handler</titleShort>
+		<baseDesc>While not personally bonded to any gryphons, [PAWN_nameDef] did help care for them. Not a particularly easy job, as a young gryphon is likely to bite off fingers, while an adult gryphon will instead bite off the whole arm.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Animals</key>
+				<value>6</value>
+			</li>
+		</skillGains>
+		<maleCommonality>80</maleCommonality>
+		<femaleCommonality>80</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_AltmerBackstory_Adulthood_AnimalsC]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_Altmer_AdulthoodBase">
+		<defName>ESCP_AltmerBackstory_Adulthood_AnimalsC</defName>
+		<title>indrik tamer</title>
+		<titleShort>tamer</titleShort>
+		<baseDesc>Not content with bonding with a gryphon, [PAWN_nameDef] instead set [PAWN_possessive] eyes on something else, the indrik. While highly skilled with animals, [PAWN_nameDef] would still have to find a wild indrik first, which proved nigh impossible.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Animals</key>
+				<value>10</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Violent</li>
+			<li>Mining</li>
+		</workDisables>
+		<maleCommonality>25</maleCommonality>
+		<femaleCommonality>25</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

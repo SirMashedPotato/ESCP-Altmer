@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_AltmerBackstory_Adulthood_GoblinSlaverBase]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_Altmer_AdulthoodBase" Name="ESCP_AltmerBackstory_Adulthood_GoblinSlaverBase" Abstract="True">
+		<spawnCategories>
+			<li>ESCP_AltmerBackstory_AdulthoodGoblinSlaver</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName>ESCP_Slaver</defName>
+				<chance>100</chance>
+			</li>
+		</forcedTraitsChance>
+		<workDisables>
+			<li>ManualDumb</li>
+			<li>Caring</li>
+		</workDisables>
+		<maleCommonality>50</maleCommonality>
+		<femaleCommonality>50</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_AltmerBackstory_Adulthood_GoblinSlaverA]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_AltmerBackstory_Adulthood_GoblinSlaverBase">
+		<defName>ESCP_AltmerBackstory_Adulthood_GoblinSlaverA</defName>
+		<title>goblin slave trainer</title>
+		<titleShort>slave trainer</titleShort>
+		<baseDesc>Rather skilled with a sword, and with ample experience under [PAWN_possessive] belt, [PAWN_nameDef] was tasked with ensuring new recruits were ready for battle. It just so happened that these recruits were actually goblins, and didn't exactly enlist willingly.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Animals</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Melee</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_AltmerBackstory_Adulthood_GoblinSlaverB]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_AltmerBackstory_Adulthood_GoblinSlaverBase">
+		<defName>ESCP_AltmerBackstory_Adulthood_GoblinSlaverB</defName>
+		<title>goblin slave master</title>
+		<titleShort>slave master</titleShort>
+		<baseDesc>Always good at manipulating people, [PAWN_nameDef] decided to put [PAWN_possessive] skills to work ensuring there were plentiful soldiers ready for battle. Under [PAWN_possessive] watchful eye, the goblin slave army grew larger than ever before, in more ways than one. [PAWN_nameDef] managed to create a breed of goblin larger than even an Orsimer.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Animals</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Intellectual</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_AltmerBackstory_Adulthood_GoblinSlaverC]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_Altmer_AdulthoodBase">
+		<defName>ESCP_AltmerBackstory_Adulthood_GoblinSlaverC</defName>
+		<title>goblin slave overseer</title>
+		<titleShort>slave overseer</titleShort>
+		<baseDesc>[PAWN_nameDef] was well known for ensuring goblin slaves were kept in line. [PAWN_pronoun] sometimes wondered whether enslaving, enlisting, and selectively breeding, a sentient race was something that a good person would do. [PAWN_nameDef] quickly banished those thoughts.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Animals</key>
+				<value>6</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>6</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+</Defs>
