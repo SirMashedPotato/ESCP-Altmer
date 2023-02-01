@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_Industrial_AltmerGrenadier_Destructive]========== -->
+	<PawnKindDef ParentName="VillagerBase">
+		<defName>ESCP_Industrial_AltmerVillager</defName>
+		<!-- Altmer stuff -->
+		<race>ESCP_AltmerRace</race>
+		<defaultFactionType>ESCP_Industrial_AltmerNonPlayerFaction_Civil</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_AltmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+					<li>ESCP_GenericBackstory_ChildhoodHighClass</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_GenericBackstory_AdulthoodSlaver</li>
+					<li>ESCP_AltmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeAdulthood>
+					<li>ESCP_AltmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_AltmerGrenadier_Destructive]========== -->
+	<PawnKindDef ParentName="GuardBase">
+		<defName>ESCP_Industrial_AltmerTown_Guard</defName>
+		<!-- Altmer stuff -->
+		<race>ESCP_AltmerRace</race>
+		<defaultFactionType>ESCP_Industrial_AltmerNonPlayerFaction_Civil</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_AltmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+					<li>ESCP_GenericBackstory_ChildhoodHighClass</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_GenericBackstory_AdulthoodSlaver</li>
+					<li>ESCP_AltmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeAdulthood>
+					<li>ESCP_AltmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_AltmerGrenadier_Destructive]========== -->
+	<PawnKindDef ParentName="TraderBase">
+		<defName>ESCP_Industrial_AltmerTown_Trader</defName>
+		<xenotypeSet Inherit="False"/>
+		<!-- Altmer stuff -->
+		<race>ESCP_AltmerRace</race>
+		<defaultFactionType>ESCP_Industrial_AltmerNonPlayerFaction_Civil</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_AltmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+					<li>ESCP_GenericBackstory_ChildhoodHighClass</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_GenericBackstory_AdulthoodSlaver</li>
+					<li>ESCP_AltmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeAdulthood>
+					<li>ESCP_AltmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_AltmerGrenadier_Destructive]========== -->
+	<PawnKindDef ParentName="CouncilmanBase">
+		<defName>ESCP_Industrial_AltmerTown_Councilman</defName>
+		<!-- Altmer stuff -->
+		<race>ESCP_AltmerRace</race>
+		<defaultFactionType>ESCP_Industrial_AltmerNonPlayerFaction_Civil</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_AltmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+					<li>ESCP_GenericBackstory_ChildhoodHighClass</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_GenericBackstory_AdulthoodSlaver</li>
+					<li>ESCP_AltmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeAdulthood>
+					<li>ESCP_AltmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+</Defs>

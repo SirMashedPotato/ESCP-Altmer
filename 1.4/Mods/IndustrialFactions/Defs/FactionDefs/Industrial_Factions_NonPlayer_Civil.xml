@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef ParentName="ESCP_NonPlayerFactionBase_IndustrialCivil" Name="ESCP_Industrial_AltmerNonPlayerFaction_CivilBase" Abstract="True">
+		<modExtensions>
+			<li Class="ESCP_RaceTools.SettlementPreference">
+				<chance>1.0</chance>
+				<useTemperatureRange>true</useTemperatureRange>
+				<temperatureRangeMin>-10</temperatureRangeMin>
+				<temperatureRangeMax>35</temperatureRangeMax>
+				<useSwampinessRange>true</useSwampinessRange>
+				<swampinessRangeMin>0.0</swampinessRangeMin>
+				<swampinessRangeMax>0.5</swampinessRangeMax>
+				<useRainfallRange>true</useRainfallRange>
+				<rainfallRangeMin>500</rainfallRangeMin>
+				<rainfallRangeMax>1500</rainfallRangeMax>
+				<dislikedBiomeList>
+					<li>MorrowRim_Ashlands</li>
+					<li>MorrowRim_BlightedAshlands</li>
+					<li>MorrowRim_VolcanicAshlands</li>
+					<li>MorrowRim_AshSwamp</li>
+					<li>Rainforest</li>
+				</dislikedBiomeList>
+				<IgnoreBiomeSelectionWeight>false</IgnoreBiomeSelectionWeight>
+			</li>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_AltmerFaction</li>
+					<li>ESCP_AltmerFactionNonPlayer</li>
+				</factionTags>
+			</li>
+		</modExtensions>
+		<leaderTitle>king</leaderTitle>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_AltmerSettlementIndustrial</factionIconPath>
+		<factionNameMaker>ESCP_Altmer_NamerFaction</factionNameMaker>
+		<settlementNameMaker>ESCP_Altmer_NamerSettlement</settlementNameMaker>
+		<allowedCultures>
+			<li>ESCP_AltmerCulture</li>
+		</allowedCultures>
+		<structureMemeWeights>
+			<ESCP_Structure_OriginDivinesEight MayRequire="Ludeon.RimWorld.Ideology">20</ESCP_Structure_OriginDivinesEight>
+		</structureMemeWeights>
+		<requiredMemes/>
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, standard mix -->
+				<kindDef>Combat</kindDef>
+				<options>
+					<ESCP_Industrial_AltmerVillager>5</ESCP_Industrial_AltmerVillager>
+					<ESCP_Industrial_AltmerTown_Guard>10</ESCP_Industrial_AltmerTown_Guard>
+					<ESCP_Industrial_AltmerGrenadier_Destructive>1.5</ESCP_Industrial_AltmerGrenadier_Destructive>
+					<ESCP_Industrial_AltmerMercenary_Slasher>7</ESCP_Industrial_AltmerMercenary_Slasher>
+					<ESCP_Industrial_AltmerMercenary_Gunner>10</ESCP_Industrial_AltmerMercenary_Gunner>
+					<ESCP_Industrial_AltmerMercenary_Elite>10</ESCP_Industrial_AltmerMercenary_Elite>
+					<ESCP_Industrial_AltmerTown_Councilman>10</ESCP_Industrial_AltmerTown_Councilman>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<ESCP_Industrial_AltmerVillager>20</ESCP_Industrial_AltmerVillager>
+					<ESCP_Industrial_AltmerVillager_Child MayRequire="Ludeon.RimWorld.Biotech">10</ESCP_Industrial_AltmerVillager_Child>
+					<ESCP_Industrial_AltmerTown_Guard>10</ESCP_Industrial_AltmerTown_Guard>
+					<ESCP_Industrial_AltmerTown_Councilman>10</ESCP_Industrial_AltmerTown_Councilman>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<ESCP_Industrial_AltmerTown_Trader>1</ESCP_Industrial_AltmerTown_Trader>
+				</traders>
+				<carriers>
+					<MorrowRim_Guar MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheAnimals">5</MorrowRim_Guar>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<ESCP_Industrial_AltmerVillager>3</ESCP_Industrial_AltmerVillager>
+					<ESCP_Industrial_AltmerTown_Guard>10</ESCP_Industrial_AltmerTown_Guard>
+					<ESCP_Industrial_AltmerGrenadier_Destructive>1.5</ESCP_Industrial_AltmerGrenadier_Destructive>
+					<ESCP_Industrial_AltmerMercenary_Slasher>7</ESCP_Industrial_AltmerMercenary_Slasher>
+					<ESCP_Industrial_AltmerMercenary_Gunner>10</ESCP_Industrial_AltmerMercenary_Gunner>
+					<ESCP_Industrial_AltmerMercenary_Elite>10</ESCP_Industrial_AltmerMercenary_Elite>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<ESCP_Industrial_AltmerVillager>10</ESCP_Industrial_AltmerVillager>
+					<ESCP_Industrial_AltmerTown_Guard>10</ESCP_Industrial_AltmerTown_Guard>
+					<ESCP_Industrial_AltmerGrenadier_Destructive>1.5</ESCP_Industrial_AltmerGrenadier_Destructive>
+					<ESCP_Industrial_AltmerMercenary_Slasher>7</ESCP_Industrial_AltmerMercenary_Slasher>
+					<ESCP_Industrial_AltmerMercenary_Gunner>10</ESCP_Industrial_AltmerMercenary_Gunner>
+					<ESCP_Industrial_AltmerMercenary_Elite>10</ESCP_Industrial_AltmerMercenary_Elite>
+					<ESCP_Industrial_AltmerTown_Councilman>10</ESCP_Industrial_AltmerTown_Councilman>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<ESCP_Industrial_AltmerMiner>1</ESCP_Industrial_AltmerMiner>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<ESCP_Industrial_AltmerHunter>1</ESCP_Industrial_AltmerHunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<ESCP_Industrial_AltmerLogger>1</ESCP_Industrial_AltmerLogger>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<ESCP_Industrial_AltmerFarmer>1</ESCP_Industrial_AltmerFarmer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	<!-- ==========[ESCP_Industrial_AltmerNonPlayerFaction_Civil]========== -->
+	<FactionDef ParentName="ESCP_Industrial_AltmerNonPlayerFaction_CivilBase">
+		<defName>ESCP_Industrial_AltmerNonPlayerFaction_Civil</defName>
+		<label>Altmer colonies (industrial)</label>
+		<description>These people have lived here for decades or centuries, and have lost most of the technology that brought them to this world. They usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThey are concerned with the practical matters of trade, trust, and survival.\n\nThis particular group holds civil behaviour in high regard.</description>
+	</FactionDef>
+</Defs>

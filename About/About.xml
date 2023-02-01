@@ -35,6 +35,7 @@
 		<li>Ludeon.RimWorld.Royalty</li>
 		<li>erdelf.HumanoidAlienRaces</li>
 		<li>SirMashedPotato.ESCP.RaceTools</li>
+		<li>SirMashedPotato.ESCP.IndustrialFactionsDummy</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 	</loadAfter>
 	<loadBefore>

@@ -28,4 +28,16 @@
 		<texPath>Achievements/ESCP_AchievementAltmer_AltmerSlayer</texPath>
 		<points>10</points>
 	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[ESCP_AchievementAltmer_DominionDestroyer]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
+		<defName>ESCP_AchievementAltmer_DominionDestroyer</defName>
+		<label>Dominion Destroyer</label>
+		<description>Defeat an Aldmeri Dominion faction</description>
+		<tracker Class="Mashed_VanillaAchievementsExpanded.FactionDefeatTracker">
+			<def>ESCP_AltmerNonPlayerFaction_Dominion</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementAltmer_DominionDestroyer</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
 </Defs>
