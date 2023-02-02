@@ -130,10 +130,7 @@
 		<combatPower>60</combatPower>
 		<backstoryFiltersOverride>
 			<li>
-				<categoriesChildhood>
-					<li>Tribal</li>
-				</categoriesChildhood>
-				<categoriesAdulthood>
+				<categoriesAdulthood Inherit="False">
 					<li>TribalHunter</li>
 				</categoriesAdulthood>
 			</li>
