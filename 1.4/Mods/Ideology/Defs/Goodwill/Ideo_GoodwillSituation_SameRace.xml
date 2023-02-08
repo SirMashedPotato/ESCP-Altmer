@@ -4,7 +4,7 @@
 		<defName>ESCP_Altmer_Altmer</defName>
 		<label>Altmer</label>
 		<workerClass>ESCP_RaceTools.GoodWillWorker_UniversalFactionTagCompatibility</workerClass>
-		<naturalGoodwillOffset>-100</naturalGoodwillOffset>
+		<naturalGoodwillOffset>100</naturalGoodwillOffset>
 		<modExtensions>
 			<li Class="ESCP_RaceTools.FactionGoodwillProperties">
 				<FactionTagA>ESCP_AltmerFaction</FactionTagA>
