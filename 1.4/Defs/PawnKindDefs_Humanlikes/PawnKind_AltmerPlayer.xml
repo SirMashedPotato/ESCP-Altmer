@@ -19,6 +19,7 @@
 					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
 					<li>ESCP_GenericBackstory_AdulthoodMage</li>
 					<li>ESCP_GenericBackstory_AdulthoodSlaver</li>
+					<li>ESCP_GenericBackstory_AdulthoodMagesGuild</li>
 					<li>ESCP_AltmerBackstory_Adulthood</li>
 				</categoriesAdulthood>
 				<excludeAdulthood>
@@ -44,6 +45,7 @@
 					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
 					<li>ESCP_GenericBackstory_AdulthoodMage</li>
 					<li>ESCP_GenericBackstory_AdulthoodSlaver</li>
+					<li>ESCP_GenericBackstory_AdulthoodMagesGuild</li>
 					<li>ESCP_AltmerBackstory_Adulthood</li>
 				</categoriesAdulthood>
 				<excludeAdulthood>
@@ -69,6 +71,7 @@
 					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
 					<li>ESCP_GenericBackstory_AdulthoodMage</li>
 					<li>ESCP_GenericBackstory_AdulthoodSlaver</li>
+					<li>ESCP_GenericBackstory_AdulthoodMagesGuild</li>
 					<li>ESCP_AltmerBackstory_Adulthood</li>
 				</categoriesAdulthood>
 				<excludeAdulthood>
