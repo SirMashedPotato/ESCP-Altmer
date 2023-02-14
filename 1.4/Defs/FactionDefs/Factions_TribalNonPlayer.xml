@@ -23,12 +23,6 @@
 				</dislikedBiomeList>
 				<IgnoreBiomeSelectionWeight>false</IgnoreBiomeSelectionWeight>
 			</li>
-			<li Class="ESCP_RaceTools.FactionProperties">
-				<factionTags>
-					<li>ESCP_AltmerFaction</li>
-					<li>ESCP_AltmerFactionNonPlayer</li>
-				</factionTags>
-			</li>
 		</modExtensions>
 		<leaderTitle>King</leaderTitle>
 		<factionIconPath>World/WorldObjects/Expanding/ESCP_AltmerSettlement</factionIconPath>
@@ -180,6 +174,14 @@
 		<defName>ESCP_AltmerNonPlayerFaction_Kingdom</defName>
 		<label>Altmer kingdom</label>
 		<description>A collection of Altmer cities and colonies, ruled over by a collective of scholars and mages. Altmer prefer to be left to their own devices, but also enjoy forcefully spreading these devices to others. Gaining an alliance with an Altmer faction may prove reasonably difficult, keeping it will prove even more challenging.\n\nThis particular faction are more focused on perfecting the high arts, than going to war with their neighbours. They are quite open to trade and alliances, even with strange peoples.</description>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_AltmerFaction</li>
+					<li>ESCP_AltmerFactionNonPlayer</li>
+				</factionTags>
+			</li>
+		</modExtensions>
 		<colorSpectrum>
 			<li>(0.3, 0.6, 0.7)</li>
 			<li>(0.6, 0.3, 0.7)</li>
@@ -204,6 +206,15 @@
 		<defName>ESCP_AltmerNonPlayerFaction_Dominion</defName>
 		<label>Altmer dominion</label>
 		<description>A collection of Altmer cities and colonies, ruled over by a single person. Altmer prefer to be left to their own devices, but also enjoy forcefully spreading these devices to others. Gaining an alliance with an Altmer faction may prove reasonably difficult, keeping it will prove even more challenging.\n\nThese particular colonies are part of an Aldmeri Dominion; they are only willing to ally with other Altmer factions.</description>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_AltmerFaction</li>
+					<li>ESCP_AltmerFactionNonPlayer</li>
+					<li>ESCP_AltmerDominionFaction</li>
+				</factionTags>
+			</li>
+		</modExtensions>
 		<colorSpectrum>
 			<li>(1.0, 1.0, 0.0)</li>
 			<li>(0.8, 0.6, 0.0)</li>
@@ -228,6 +239,14 @@
 		<defName>ESCP_AltmerNonPlayerFaction_Deserters</defName>
 		<label>Altmer deserters</label>
 		<description>A collection of Altmer cities and colonies, ruled over by a self appointed 'king'. They left their old lives for a reason; you will not be able to ally with them!</description>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_AltmerFaction</li>
+					<li>ESCP_AltmerFactionNonPlayer</li>
+				</factionTags>
+			</li>
+		</modExtensions>
 		<colorSpectrum>
 			<li>(0.85, 0, 0)</li>
 			<li>(0.85, 0.7, 0.7)</li>

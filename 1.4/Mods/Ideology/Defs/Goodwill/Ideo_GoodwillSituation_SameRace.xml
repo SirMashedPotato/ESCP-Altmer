@@ -2,9 +2,9 @@
 <Defs>
 	<GoodwillSituationDef>
 		<defName>ESCP_Altmer_Altmer</defName>
-		<label>Altmer</label>
+		<label>Altmer allegiance</label>
 		<workerClass>ESCP_RaceTools.GoodWillWorker_UniversalFactionTagCompatibility</workerClass>
-		<naturalGoodwillOffset>100</naturalGoodwillOffset>
+		<naturalGoodwillOffset>50</naturalGoodwillOffset>
 		<modExtensions>
 			<li Class="ESCP_RaceTools.FactionGoodwillProperties">
 				<FactionTagA>ESCP_AltmerFaction</FactionTagA>
@@ -12,12 +12,17 @@
 			</li>
 		</modExtensions>
 	</GoodwillSituationDef>
-	<!-- TODO
+	
 	<GoodwillSituationDef>
-		<defName>ESCP_Altmer_NonAltmer</defName>
-		<label>not Altmer</label>
-		<workerClass>ESCP_RaceTools.GoodwillSituationWorker_AltmerDominionCompatibility</workerClass>
+		<defName>ESCP_AltmerDominion_NonAltmer</defName>
+		<label>Altmer Dominion vs not Altmer</label>
+		<workerClass>ESCP_RaceTools.GoodWillWorker_UniversalFactionTagCompatibility_Inverted</workerClass>
 		<naturalGoodwillOffset>-100</naturalGoodwillOffset>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.FactionGoodwillProperties">
+				<FactionTagA>ESCP_AltmerDominionFaction</FactionTagA>
+				<FactionTagB>ESCP_AltmerFaction</FactionTagB>
+			</li>
+		</modExtensions>
 	</GoodwillSituationDef>
-	-->
 </Defs>
