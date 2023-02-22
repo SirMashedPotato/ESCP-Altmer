@@ -22,6 +22,9 @@
 					<li>ESCP_GenericBackstory_AdulthoodSlaver</li>
 					<li>ESCP_AltmerBackstory_Adulthood</li>
 				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_AltmerBackstory_Exclusion</li>
+				</excludeChildhood>
 				<excludeAdulthood>
 					<li>ESCP_AltmerBackstory_Exclusion</li>
 				</excludeAdulthood>
