@@ -23,7 +23,6 @@
 			<GlobalLearningFactor>1.2</GlobalLearningFactor>
 		</statBases>
 		<race>
-			<lifeExpectancy>300</lifeExpectancy>
 			<leatherDef>ESCP_LeatherAltmer</leatherDef>
 			<nameGenerator>ESCP_Altmer_NamerMale</nameGenerator>
 			<nameGeneratorFemale>ESCP_Altmer_NamerFemale</nameGeneratorFemale>
