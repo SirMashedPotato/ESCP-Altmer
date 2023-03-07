@@ -5,7 +5,7 @@
 		<defName>ESCP_AltmerPlayerFaction_Industrial</defName>
 		<label>New Altmer Arrivals</label>
 		<basicMemberKind>ESCP_AltmerPlayerPawnKind_Outlander</basicMemberKind>
-		<factionIconPath>World/WorldObjects/Expanding/ESCP_AltmerSettlement</factionIconPath>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_AltmerSettlementIndustrial</factionIconPath>
 		<allowedCultures>
 			<li>ESCP_AltmerCulture</li>
 		</allowedCultures>
