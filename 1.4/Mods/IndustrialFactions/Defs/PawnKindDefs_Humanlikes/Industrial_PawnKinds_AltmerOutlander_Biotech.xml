@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[ESCP_Industrial_AltmerGrenadier_Destructive]========== -->
-	<PawnKindDef ParentName="Villager_Child" MayRequire="Ludeon.RimWorld.Biotech">
+	<PawnKindDef ParentName="ESCP_ChildPawnKindBase_Industrial" MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>ESCP_Industrial_AltmerVillager_Child</defName>
 		<!-- Altmer stuff -->
 		<race>ESCP_AltmerRace</race>
