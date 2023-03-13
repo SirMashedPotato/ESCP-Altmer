@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[? ESCP_AltmerBackstory_Adulthood_StuffKnowledgeAdamantite ?]========== -->
+	<!-- ==========[ESCP_AltmerBackstory_Adulthood_StuffKnowledgeGlass]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_Altmer_AdulthoodBase">
+		<defName>ESCP_AltmerBackstory_Adulthood_StuffKnowledgeGlass</defName>
+		<title>master glass smith</title>
+		<titleShort>master smith</titleShort>
+		<baseDesc>Working glass was exceptionally hard work, and even with the secrets passed down to [PAWN_nameDef], it still took [PAWN_objective] considerable time until [PAWN_pronoun] produced anything to be proud of. But when that time came, it was clear that [PAWN_nameDef] had mastered working glass.</baseDesc>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<skillGains>
+			<li>
+				<key>Crafting</key>
+				<value>8</value>
+			</li>
+			<li>
+				<key>Artistic</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>PlantWork</li>
+			<li>ManualDumb</li>
+		</workDisables>
+		<maleCommonality>5</maleCommonality>
+		<femaleCommonality>5</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_AltmerBackstory_Adulthood_StuffKnowledgeMoonstone]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_Altmer_AdulthoodBase">
+		<defName>ESCP_AltmerBackstory_Adulthood_StuffKnowledgeMoonstone</defName>
+		<title>master moonstone smith</title>
+		<titleShort>master smith</titleShort>
+		<baseDesc>One of [PAWN_nameDef]'s ancestors was a rather skilled moonstone smith, back when the Altmer were still Aldmer. Carefully passed down through generations, [PAWN_nameDef] had to endure endless nights of hard work before [PAWN_pronoun] was permitted to learn the secrets.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Crafting</key>
+				<value>6</value>
+			</li>
+			<li>
+				<key>Artistic</key>
+				<value>6</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>PlantWork</li>
+		</workDisables>
+		<maleCommonality>5</maleCommonality>
+		<femaleCommonality>5</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+</Defs>
