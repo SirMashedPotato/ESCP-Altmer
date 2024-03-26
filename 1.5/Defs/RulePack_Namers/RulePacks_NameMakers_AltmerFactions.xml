@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ========== [ESCP_Altmer_NamerFaction] ========== -->
+	<RulePackDef>
+		<defName>ESCP_Altmer_NamerFaction</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->Altmer Kingdom of the [a] [b]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>a->ESCP_AltmerNames/AltmerFactionA</li>
+				<li>b->ESCP_AltmerNames/AltmerFactionB</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<!-- ========== [ESCP_Altmer_NamerFactionDominion] ========== -->
+	<RulePackDef>
+		<defName>ESCP_Altmer_NamerFactionDominion</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->The [a] Dominion</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>a->ESCP_AltmerNames/AltmerFactionA</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<!-- ========== [ESCP_Altmer_NamerFactionRaider] ========== -->
+	<RulePackDef>
+		<defName>ESCP_Altmer_NamerFactionRaider</defName>
+		<include>
+			<li>TribalWordUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->The [Color] [TerrainFeature] Bandits</li>
+				<li>r_name->[AltmerCities] Deserters</li>
+				<li>r_name->[FamilyList]'s Hansa</li>
+				<li>r_name->[FamilyList]'s Raiders</li>
+				<li>r_name->[AltmerCities] Raiders</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>AltmerCities->ESCP_AltmerNames/AltmerCities</li>
+				<li>FamilyList->ESCP_AltmerNames/AltmerFamily</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<!-- ========== [ESCP_Altmer_NamerSettlement] ========== -->
+	<RulePackDef>
+		<defName>ESCP_Altmer_NamerSettlement</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[AltmerCities]</li>
+				<li>r_name->The [a] [c]</li>
+				<li>r_name->[c] of the [b]</li>
+				<li>r_name->[c] of [AltmerGods]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>AltmerCities->ESCP_AltmerNames/AltmerCities</li>
+				<li>a->ESCP_AltmerNames/AltmerFactionA</li>
+				<li>b->ESCP_AltmerNames/AltmerFactionB</li>
+				<li>c->ESCP_AltmerNames/AltmerFactionC</li>
+				<li>AltmerGods->ESCP_AltmerNames/AltmerGods</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+</Defs>

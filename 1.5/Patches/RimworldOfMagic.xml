@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>A RimWorld of Magic</li>
+    </mods>
+
+    <match Class="PatchOperationSequence">
+
+		<operations>
+	
+			<!-- increase the enchantability of stuff -->
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "ESCP_LeatherAltmer"]/comps</xpath>
+				<value>
+					<li Class="TorannMagic.Enchantment.CompProperties_EnchantedStuff">
+						<isEnchanted>true</isEnchanted>
+						<enchantmentBonusMultiplier>1.1</enchantmentBonusMultiplier>
+						<maxEnergyOffset>0.05</maxEnergyOffset>
+					</li>
+				</value>
+			</li>
+			
+			<!-- edit descriptions to reflect this -->
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "ESCP_LeatherAltmer"]/description</xpath>
+				<value>
+					<description>Tanned, dried, scraped Altmer skin. Most people find this material horrifying. Some find it fascinating.\n\nDue to its inherit magical properties, any gear made of Altmer leather will increase the wielders maximum energy, as well as increase the potency of any other enchantments on the gear.</description>
+				</value>
+			</li>
+			
+		</operations>
+
+    </match>
+  </Operation>
+
+</Patch>

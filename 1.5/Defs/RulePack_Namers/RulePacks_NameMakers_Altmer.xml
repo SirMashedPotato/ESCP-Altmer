@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ========== [ESCP_Altmer_NamerMale] ========== -->
+	<RulePackDef>
+		<defName>ESCP_Altmer_NamerMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[MaleList] [FamilyList]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>MaleList->ESCP_AltmerNames/AltmerMale</li>
+				<li>FamilyList->ESCP_AltmerNames/AltmerFamily</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<!-- ========== [ESCP_Altmer_NamerFemale] ========== -->
+	<RulePackDef>
+		<defName>ESCP_Altmer_NamerFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[FemaleList] [FamilyList]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>FemaleList->ESCP_AltmerNames/AltmerFemale</li>
+				<li>FamilyList->ESCP_AltmerNames/AltmerFamily</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+</Defs>

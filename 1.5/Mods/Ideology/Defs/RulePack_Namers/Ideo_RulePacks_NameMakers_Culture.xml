@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_Altmer_NamerCultureLeaderTitle]========== -->
+	<RulePackDef>
+		<defName>ESCP_Altmer_NamerCultureLeaderTitle</defName>
+		<include>
+			<li>LeaderTitleMaker_GlobalStructure</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>memeLeaderNoun(priority=1)->[cultureLeaderNoun]</li>
+				<!-- ignore all meme nouns, tribals always use a culture noun -->
+				<li>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</li>
+				<li>cultureLeaderAdjective->[a]</li>
+				<li>cultureLeaderNoun->archmagister</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>a->ESCP_AltmerNames/AltmerFactionA</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[ESCP_Altmer_NamerCultureDeityName]========== -->
+	<RulePackDef>
+		<defName>ESCP_Altmer_NamerCultureDeityName</defName>
+		<include>
+			<li>NamerDeityGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[AltmerGods]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>AltmerGods->ESCP_AltmerNames/AltmerGods</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+</Defs>
