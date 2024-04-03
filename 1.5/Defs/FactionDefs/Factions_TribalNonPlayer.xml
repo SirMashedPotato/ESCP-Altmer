@@ -15,10 +15,16 @@
 				<rainfallRangeMin>500</rainfallRangeMin>
 				<rainfallRangeMax>1500</rainfallRangeMax>
 				<dislikedBiomeList>
-					<li>MorrowRim_Ashlands</li>
-					<li>MorrowRim_BlightedAshlands</li>
-					<li>MorrowRim_VolcanicAshlands</li>
-					<li>MorrowRim_AshSwamp</li>
+					<li>Mashed_Ashlands_SwampAshlands</li>
+					<li>Mashed_Ashlands_Ashlands</li>
+					<li>Mashed_Ashlands_DustplainAshlands</li>
+
+					<li>Mashed_Ashlands_BlightedAshlands</li>
+					<li>Mashed_Ashlands_BlightedBogAshlands</li>
+
+					<li>Mashed_Ashlands_VolcanicAshlands</li>
+					<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+					<!--<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>-->
 					<li>Rainforest</li>
 				</dislikedBiomeList>
 				<IgnoreBiomeSelectionWeight>false</IgnoreBiomeSelectionWeight>
@@ -130,7 +136,7 @@
 					<ESCP_Altmer_Tribal_Trader>1</ESCP_Altmer_Tribal_Trader>
 				</traders>
 				<carriers>
-					<MorrowRim_Guar MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheAnimals">5</MorrowRim_Guar>
+					<Mashed_Ashlands_Guar MayRequire="sirmashedpotato.ashlands">5</Mashed_Ashlands_Guar>
 					<Muffalo>6</Muffalo>
 					<Dromedary>5</Dromedary>
 					<Alpaca>2.5</Alpaca>
